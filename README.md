@@ -16,7 +16,6 @@ Exp:
 
   gcc -o l0l main.c  
   
+-----
 
   Greetz: b3mb4m
-  
------
