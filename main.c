@@ -6,7 +6,7 @@
     File : main.c
 */
 
-#include "/system/core/core.h"
+#include "system/core/core.h"
 
 int main(){
 
