@@ -6,13 +6,19 @@
     File : functions.c
 */
 
+char* mainConsole( char *s ){
+        printf("l0l >");
+        scanf("%99s", s);
+        return s;
+}
+
+
 void help(){
     printf("\n    Commands\n");
     printf("    --------\n");
     printf("    help    - Help Menu\n");
     printf("    banner  - Show Banner\n");
     printf("    clear   - Clean Screen\n");
-    printf("    restart - Restart App\n");
     printf("    exit    - Close Application\n\n");
 
 }

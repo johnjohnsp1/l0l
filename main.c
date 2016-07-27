@@ -10,7 +10,6 @@
 
 int main(){
 
-    restart:
     banner();
     char str[100];
 
@@ -21,8 +20,7 @@ int main(){
     while(1){
     do{
 
-        printf("l0l >");
-        scanf("%99s", str);
+        mainConsole( str );
 
         if (strcmp(str,"help") == 0){
             help();
@@ -36,10 +34,7 @@ int main(){
         else if (strcmp(str,"clear") == 0){
             clear();
         }
-        else if (strcmp(str,"restart") == 0){
-            clear();
-            goto restart;
-        }
+
         else{
             printf("\n[*] Invalid Command !\n\n");
         }
