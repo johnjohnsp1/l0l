@@ -5,19 +5,13 @@ l0l Project is Exploit Dev. Kit bla bla bla ... Development first Step.. now Bet
 #Install
 -----
 
-      $ make
-      
-      
-      or 
-      
-        main.c file compile... 
-      
-      Exp: 
-      
-      $ gcc -o l0l main.c  
-      
+    $ make 
+    or,
+    main.c file compile...
+    Exp:
+    gcc -o l0l main.c
+    
 -----
-
 #Usage
 -----
 
