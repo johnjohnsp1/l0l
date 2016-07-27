@@ -14,15 +14,15 @@ void banner(){
    FILE *fp;
 
     if(x == 1)
-        fp = fopen("system/core/banner/banner1.txt","r");
+        fp = fopen("sys/core/banner/banner1.txt","r");
     else if(x == 2)
-        fp = fopen("system/core/banner/banner2.txt", "r");
+        fp = fopen("sys/core/banner/banner2.txt", "r");
     else if(x == 3)
-        fp = fopen("system/core/banner/banner3.txt", "r");
+        fp = fopen("sys/core/banner/banner3.txt", "r");
     else if(x == 4)
-        fp = fopen("system/core/banner/banner4.txt", "r");
+        fp = fopen("sys/core/banner/banner4.txt", "r");
     else if(x == 5)
-        fp = fopen("system/core/banner/banner5.txt", "r");
+        fp = fopen("sys/core/banner/banner5.txt", "r");
     else
         printf("Error!\n");
 
