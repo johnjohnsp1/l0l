@@ -7,11 +7,14 @@
 */
 
 
+
 void banner(){
    srand ( time(NULL) );
    int x = rand() % 5 + 1 ;
    char kaka;
    FILE *fp;
+
+    // http://patorjk.com/software/taag
 
 	if(x == 1)
         fp = fopen("core/banner/banner1.txt","r");
