@@ -29,8 +29,7 @@ void closeApp(){
     exit(0);
 }
 
-void ctrlcDetect(int qwe)
-{
+void ctrlcDetect(int qwe) {
     signal(SIGINT, ctrlcDetect);
     printf("\n[*] (Ctrl + C) Detected. Trying to exit..\n");
     exit(0);

@@ -40,7 +40,6 @@ int main(){
             clear();
         }
         else if(strcmp(str1,"os") == 0){
-
             char *str2 =  shorter(command,3);
             printf("\n");
             system(str2);
