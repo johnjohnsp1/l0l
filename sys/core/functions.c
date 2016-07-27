@@ -25,13 +25,16 @@ void clear(){
 
 // Help Menu Function
 void help(){
-    printf("\n    Commands\n");
-    printf("    --------\n");
-    printf("    help    - Help Menu\n");
-    printf("    os      - Command directly ur computer\n");
-    printf("    banner  - Show Banner\n");
-    printf("    clear   - Clean Screen\n");
-    printf("    exit    - Close Application\n\n");
+
+    printf("\nUsage Commands\n");
+    printf("===============\n");
+    printf("\n\t    Commands\n");
+    printf("\t    --------\n");
+    printf("\t    help    - Help Menu\n");
+    printf("\t    os      - Command directly ur computer\n");
+    printf("\t    banner  - Show Banner\n");
+    printf("\t    clear   - Clean Screen\n");
+    printf("\t    exit    - Close Application\n\n");
 }
 
 // Close Function

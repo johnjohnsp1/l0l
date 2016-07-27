@@ -14,7 +14,6 @@ int main(){
 
     char command[100];
 
-
     // Ctrl+C Detect
     signal(SIGINT, ctrlcDetect);
 

@@ -6,7 +6,6 @@
     File : banner.c
 */
 
-
 void banner(){
    srand ( time(NULL) );
    int x = rand() % 5 + 1 ;
