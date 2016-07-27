@@ -28,13 +28,14 @@ void help(){
 
     printf("\nUsage Commands\n");
     printf("===============\n");
-    printf("\n\t    Commands\n");
-    printf("\t    --------\n");
-    printf("\t    help    - Help Menu\n");
-    printf("\t    os      - Command directly ur computer\n");
-    printf("\t    banner  - Show Banner\n");
-    printf("\t    clear   - Clean Screen\n");
-    printf("\t    exit    - Close Application\n\n");
+    printf("\n\t    Commands\t\tDescription\n");
+    printf("\t    ----------\t \t--------------\n");
+    printf("\t    help    \t\tHelp Menu\n");
+    printf("\t    os      \t\tCommand directly ur computer\n");
+    printf("\t    banner  \t\tShow Banner\n");
+    printf("\t    clear   \t\tClear the menu\n");
+    printf("\t    exit    \t\tClose Application\n\n");
+
 }
 
 // Close Function
