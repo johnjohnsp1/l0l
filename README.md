@@ -24,4 +24,4 @@ l0l Project is Exploit Dev. Kit bla bla bla ... now development first step.. aft
     
 -----
 #Screenshot
-![alt tag](http://i.hizliresim.com/5VJdGj.png)
+![alt tag](http://i.hizliresim.com/NEPLPX.png)
