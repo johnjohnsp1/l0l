@@ -6,6 +6,7 @@
     File : core.h
 */
 
+/* Standart Headers */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -13,7 +14,10 @@
 #include <string.h>
 #include <time.h>
 #include <signal.h>
-#include <unistd.h>
+
+
+/* Core */
+
 #include "l0l.c"
 #include "banner/banner.c"
 #include "functions.c"

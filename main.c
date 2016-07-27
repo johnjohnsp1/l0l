@@ -13,8 +13,12 @@ int main(){
     banner();
     char str[100];
 
+    // Ctrl+C Detect
+    signal(SIGINT, ctrlcDetect);
+
+    while(1){
     do{
-        console:
+
         consoleRead( str );
 
         if (strcmp(str,"help") == 0){
@@ -25,17 +29,18 @@ int main(){
         }
         else if (strcmp(str,"banner") == 0){
             banner();
-            goto console;
+
         }
         else if (strcmp(str,"clear") == 0){
             clear();
-            goto console;
+
         }
         else{
             printf("\n[*] Invalid Command !\n\n");
         }
 
-  }while(1);
+  }while(2);
+}
 
     return 0;
 }
