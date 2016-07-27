@@ -33,4 +33,19 @@ void banner(){
 
     printf("\n");
 
+    int shellcodeP = 0;
+    int encodersP = 0;
+    int injectorP = 0;
+    int backdoorsP = 0;
+    int differentOsP = 0;
+
+    printf("        =[ l0l v0.1       -  BETA                               ]\n");
+    printf(" + -- --=[ %d shellcode    -  %d Different OS                     ]\n", shellcodeP, differentOsP);
+    printf(" + -- --=[ %d encoders     -  (Shellcodes/executable files)      ]\n", encodersP);
+    printf(" + -- --=[ %d injector     -  (PE,ELF,DLL,RAR,DEB etc...)        ]\n", injectorP);
+    printf(" + -- --=[ %d backdoors    -  (ReverseShell)                     ]\n", backdoorsP);
+    printf(" + -- --=[ Open Source    :  https://github.com/roissy/l0l      ]\n");
+
+    printf("\n");
+
 }
