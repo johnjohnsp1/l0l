@@ -11,8 +11,8 @@ void help(){
     printf("    --------\n");
     printf("    help    - Help Menu\n");
     printf("    banner  - Show Banner\n");
-    printf("    restart - Restart App\n");
     printf("    clear   - Clean Screen\n");
+    printf("    restart - Restart App\n");
     printf("    exit    - Close Application\n\n");
 
 }
