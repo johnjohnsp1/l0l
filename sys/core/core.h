@@ -10,4 +10,3 @@
 
 #include "banner/banner.c"
 #include "functions.c"
-#include "clear.c"

@@ -30,6 +30,8 @@ int main(){
         char *asdasd = " ";
         str1 = strtok(command, asdasd);
 
+        // Console Functions...
+
         if (strcmp(str1,"help") == 0){
             help();
         }
