@@ -18,5 +18,16 @@ $ gcc -o l0l main.c
   
 -----
 
+#Usage
+-----
+
+    Commands
+    --------
+    help   - Print Help Menu
+    banner - Show Banner
+    clear  - Clear Screen
+    exit   - Close Application
+    
+-----
 #Screenshot
 ![alt tag](http://i.hizliresim.com/5VJdGj.png)
