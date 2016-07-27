@@ -6,12 +6,13 @@
     File : functions.c
 */
 
+/*
 char* mainConsole( char *s ){
         printf("l0l >");
         scanf("%99s", s);
         return s;
 }
-
+*/
 
 void help(){
     printf("\n    Commands\n");
@@ -34,3 +35,5 @@ void ctrlcDetect(int qwe)
     printf("\n[*] (Ctrl + C) Detected. Trying to exit..\n");
     exit(0);
 }
+
+
