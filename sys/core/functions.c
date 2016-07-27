@@ -37,3 +37,20 @@ void ctrlcDetect(int qwe)
 }
 
 
+char* shorter(char *bilik, int p){
+    bilik+=p;
+    return bilik;
+}
+
+
+/*
+
+char* bebe = "os color a";
+char* kaka = shorter(bebe,3);
+system(kaka);
+printf("%s", kaka);
+
+
+*/
+
+

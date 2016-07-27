@@ -6,9 +6,6 @@
     File : sys.h
 */
 
-
-
-
 /* Standart Headers */
 
 #include <stdio.h>

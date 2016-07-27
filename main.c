@@ -26,15 +26,10 @@ int main(){
         gets(command);
         //scanf("%99s", command);
 
-
-        char *str1;
-        char *str2;
-
+        char sCommand2[] = "os ver";
+        char *str1, *str2;
         char *search = " ";
-
         str1 = strtok(command, search);
-        str2 = strtok(NULL, search);
-
 
 
         if (strcmp(str1,"help") == 0){
@@ -50,9 +45,13 @@ int main(){
             goto console;
         }
         else if(strcmp(str1,"os") == 0){
+
+
             printf("\n");
             system(str2);
+            printf("\n");
             goto console;
+
         }
         else if (strcmp(str1,"exit") == 0){
             closeApp();
@@ -61,7 +60,6 @@ int main(){
             printf("\n[-] Unknown command: %s\n\n", str1);
             goto console;
         }
-
 }
     return 0;
 }
