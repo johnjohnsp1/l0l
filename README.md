@@ -9,7 +9,7 @@ l0l Project is Exploit Dev. Kit bla bla bla ... Development first Step.. now Bet
     or,
     main.c compile file..
     Exp:
-    gcc -o l0l main.c
+    $ gcc -o l0l main.c
     
 -----
 #Usage
