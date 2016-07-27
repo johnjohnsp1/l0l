@@ -19,4 +19,4 @@ $ gcc -o l0l main.c
 -----
 
 #Screenshot
-![alt tag](http://i.hizliresim.com/4l4ggp.png)
+![alt tag](http://i.hizliresim.com/5VJdGj.png)
