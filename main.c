@@ -6,36 +6,52 @@
     File : main.c
 */
 
-#include "core/core.h"
+#include "sys/sys.h"
 
 int main(){
 
     banner();
-    char str[100];
 
-    do{
-        console:
-        consoleRead( str );
+    char command[100];
 
-        if (strcmp(str,"help") == 0){
+
+    // Ctrl+C Detect
+    signal(SIGINT, ctrlcDetect);
+
+    while(1){
+
+        //mainConsole( str );
+        printf("l0l >");
+        gets(command);
+        //scanf("%99s", command);
+
+        char sCommand2[] = "os ver";
+        char *str1;
+        char *asdasd = " ";
+        str1 = strtok(command, asdasd);
+
+        if (strcmp(str1,"help") == 0){
             help();
         }
-        else if (strcmp(str,"exit") == 0){
+        else if (strcmp(str1,"banner") == 0){
+            banner();
+        }
+        else if (strcmp(str1,"clear") == 0){
+            clear();
+        }
+        else if(strcmp(str1,"os") == 0){
+
+            char *str2 =  shorter(command,3);
+            printf("\n");
+            system(str2);
+            printf("\n");
+        }
+        else if (strcmp(str1,"exit") == 0){
             closeApp();
         }
-        else if (strcmp(str,"banner") == 0){
-            banner();
-            goto console;
-        }
-        else if (strcmp(str,"clear") == 0){
-            clear();
-            goto console;
-        }
         else{
-            printf("\n[*] Invalid Command !\n\n");
+            printf("\n[-] Unknown command: %s\n\n", str1);
         }
-
-  }while(1);
-
+}
     return 0;
 }
