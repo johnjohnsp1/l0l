@@ -20,9 +20,6 @@ int main(){
 
     while(1){
 
-
-
-
         console:
         //mainConsole( str );
         printf("l0l >");
