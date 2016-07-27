@@ -15,12 +15,16 @@ l0l Project is Exploit Dev. Kit bla bla bla ... now development first step.. aft
 #Usage
 -----
 
-    Commands
-    --------
-    help    - Help Menu
-    banner  - Show Banner
-    clear   - Clean Screen
-    exit    - Close Application
+    Usage Commands
+    ===============
+
+            Commands            Description
+            ----------          --------------
+            help                Help Menu
+            os                  Command directly ur computer
+            banner              Show Banner
+            clear               Clear the menu
+            exit                Close Application
     
 -----
 #Screenshot
