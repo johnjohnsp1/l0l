@@ -5,7 +5,7 @@ l0l Project is Exploit Dev. Kit bla bla bla ... Development first Step.. now Bet
 #Install
 -----
 
-console $ make
+$ make
 
 
 or 
@@ -14,7 +14,7 @@ or
 
 Exp: 
 
-  gcc -o l0l main.c  
+$ gcc -o l0l main.c  
   
 -----
 
