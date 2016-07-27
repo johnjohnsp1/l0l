@@ -7,7 +7,7 @@ l0l Project is Exploit Dev. Kit bla bla bla ... Development first Step.. now Bet
 
     $ make 
     or,
-    main.c file compile...
+    main.c compile file..
     Exp:
     gcc -o l0l main.c
     
