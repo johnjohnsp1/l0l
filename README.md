@@ -19,8 +19,8 @@ l0l Project is Exploit Dev. Kit bla bla bla ... Development first Step.. now Bet
     --------
     help    - Help Menu
     banner  - Show Banner
-    restart - Restart App
     clear   - Clean Screen
+    restart - Restart App
     exit    - Close Application
     
 -----
