@@ -24,10 +24,9 @@ int main(){
         gets(command);
         //scanf("%99s", command);
 
-        char sCommand2[] = "os ver";
         char *str1;
-        char *asdasd = " ";
-        str1 = strtok(command, asdasd);
+
+        str1 = strtok(command, " ");
 
         // Console Functions...
 
