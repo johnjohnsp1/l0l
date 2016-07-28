@@ -49,9 +49,9 @@ int main(){
         }
 
         else if(strcmp(command,"os") == 0){
-            // Set Green Color
-            rlutil::setColor(2);
 
+            // Set White Color
+            rlutil::setColor(15);
 
             char *os =  shorter(command,3);
             printf("\n");
