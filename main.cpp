@@ -12,7 +12,7 @@ int main(){
 
     banner();
 
-    char command[100];
+    char command[100], command2[100];
 
     // Ctrl+C Detect
     signal(SIGINT, ctrlcDetect);
@@ -21,13 +21,32 @@ int main(){
 
         printf("l0l >");
         gets(command);
-        char *str;
+        // scanf("%s", command);
+        int readKaka = 0, writeKaka;
 
-        str = strtok(command, " ");
+        while(command[readKaka] == ' '){
+            readKaka++;
+        }
+
+        for(writeKaka = 0;command[readKaka] != '\0'; readKaka++){
+          if(command[readKaka]==' ' && command[readKaka-1]==' '){
+              continue;
+          }
+          command2[writeKaka] = command[readKaka];
+          writeKaka++;
+        }
+        command2[writeKaka] = '\0';
+
+        char *str;
+        str = strtok(command2, " ");
 
         // Commands..
 
         if (strlen(command) == 0 || command[0] == '\r' || command[0] == '\n');
+
+        else if (strcmp(str," ") == 0){
+            help();
+        }
 
         else if (strcmp(str,"help") == 0){
             help();
@@ -50,6 +69,6 @@ int main(){
         else{
             printf("\n[-] Unknown command: %s\n\n", str);
         }
-}
+    }
     return 0;
 }
