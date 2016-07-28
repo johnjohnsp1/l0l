@@ -21,8 +21,6 @@ int main(){
 
         //mainConsole( str );
         printf("l0l >");
-        gets(command);
-        //scanf("%99s", command);
 
         char *str1;
 
@@ -40,9 +38,9 @@ int main(){
             clear();
         }
         else if(strcmp(str1,"os") == 0){
-            char *str2 =  shorter(command,3);
+            char *os =  shorter(command,3);
             printf("\n");
-            system(str2);
+            system(os);
             printf("\n");
         }
         else if (strcmp(str1,"exit") == 0){
