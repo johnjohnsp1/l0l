@@ -18,7 +18,6 @@ int main(){
     signal(SIGINT, ctrlcDetect);
 
     while(1){
-
         printf("l0l >");
         gets(command);
 
