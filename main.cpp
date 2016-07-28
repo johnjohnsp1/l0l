@@ -12,7 +12,7 @@ int main(){
 
     banner();
 
-    char command[100] = "";
+    char command[100] = "", *str;
 
     // Ctrl+C Detect
     signal(SIGINT, ctrlcDetect);
@@ -29,8 +29,7 @@ int main(){
 
         gets(command);
 
-        char *str;
-        str = strtok(command, " ");
+        strtok(command, " ");
 
         if (strlen(command) == 0 || command[0] == '\r' || command[0] == '\n');
 
@@ -53,9 +52,9 @@ int main(){
             // Set White Color
             rlutil::setColor(15);
 
-            char *os =  shorter(command,3);
+            str =  shorter(command,3);
             printf("\n");
-            system(os);
+            system(str);
             printf("\n");
         }
 
