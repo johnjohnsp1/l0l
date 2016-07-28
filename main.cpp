@@ -27,8 +27,6 @@ int main(){
 
         // Commands..
 
-        if (strlen(command) == 0 || command[0] == '\r' || command[0] == '\n');
-
         else if (strcmp(command,"help") == 0){
             help();
         }
@@ -53,7 +51,7 @@ int main(){
         }
 
         else{
-            printf("\n[-] Unknown command: %s\n\n", command);
+            printf("[-] Unknown command: %s\n", command);
         }
 }
     return 0;
