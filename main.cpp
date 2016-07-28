@@ -12,8 +12,6 @@ int main(){
 
     banner();
 
-
-
     char command[100];
 
     // Ctrl+C Detect

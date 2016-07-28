@@ -6,11 +6,9 @@
     File : core.h
 */
 
-
 /* libs */
 
 #include "libs/rlutil/rlutil.h"
-
 
 /* Core */
 
