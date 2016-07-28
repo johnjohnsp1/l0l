@@ -6,7 +6,12 @@
     File : sys.h
 */
 
-/* Standart Headers */
+/* Standart C++ Headers */
+
+#include <iostream>
+
+
+/* Standart C Headers */
 
 #include <stdio.h>
 #include <stdlib.h>

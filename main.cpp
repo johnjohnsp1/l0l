@@ -12,6 +12,8 @@ int main(){
 
     banner();
 
+
+
     char command[100];
 
     // Ctrl+C Detect
@@ -25,9 +27,9 @@ int main(){
         char *str;
         str = strtok(command, " ");
 
-        // Commands..
-
         if (strlen(command) == 0 || command[0] == '\r' || command[0] == '\n');
+
+        // Commands..
 
         else if (strcmp(command,"help") == 0){
             help();

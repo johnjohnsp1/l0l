@@ -6,7 +6,14 @@
     File : core.h
 */
 
+
+/* libs */
+
+#include "libs/rlutil/rlutil.h"
+
+
 /* Core */
 
 #include "banner/banner.c"
 #include "functions.c"
+
