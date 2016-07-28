@@ -42,7 +42,7 @@ void banner(){
     int differentOsP = 0;
 
     // Set Red Color
-    // rlutil::setColor(12);
+    //rlutil::setColor(12);
 
 
     // Set Green Color
@@ -77,7 +77,7 @@ void banner(){
 
     printf(" + -- --=[ %d backdoors    -", backdoorsP);
     rlutil::setColor(12);
-    printf("  (ReverseShell)                    rlutil::setColor(12); ");
+    printf("  (ReverseShell)                     ");
     rlutil::setColor(2);
     printf("]\n");
 
