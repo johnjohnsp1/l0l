@@ -27,6 +27,8 @@ int main(){
 
         // Commands..
 
+        if (strlen(command) == 0 || command[0] == '\r' || command[0] == '\n');
+
         else if (strcmp(command,"help") == 0){
             help();
         }
