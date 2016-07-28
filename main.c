@@ -6,7 +6,7 @@
     File : main.c
 */
 
-#include "sys/sys.h"
+#include "main.h"
 
 int main(){
 
@@ -19,16 +19,16 @@ int main(){
 
     while(1){
 
-        //mainConsole( str );
         printf("l0l >");
-
+        gets(command);
         char *str1;
 
         str1 = strtok(command, " ");
 
-        // Console Functions...
+        // Commands..
 
-        if (strcmp(str1,"help") == 0){
+        if (strlen(command) == 0 || command[0] == "\r" || command[0] == "\n");
+        else if (strcmp(str1,"help") == 0){
             help();
         }
         else if (strcmp(str1,"banner") == 0){
