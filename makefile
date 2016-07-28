@@ -1,2 +1,2 @@
-l0l: main.c
-	gcc -o l0l main.c
+l0l: main.cpp
+	g++ -o l0l main.cpp

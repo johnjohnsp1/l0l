@@ -7,9 +7,9 @@ l0l Project is Exploit Dev. Kit bla bla bla ... now development first step.. aft
 
     $ make 
     or,
-    main.c compile file..
+    main.cpp compile file..
     Exp:
-    $ gcc -o l0l main.c
+    $ g++ -o l0l main.cpp
     
 -----
 #Usage
