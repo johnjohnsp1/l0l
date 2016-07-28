@@ -42,7 +42,7 @@ void banner(){
     int differentOsP = 0;
 
     // Set Red Color
-    //rlutil::setColor(12);
+    // rlutil::setColor(12);
 
 
     // Set Green Color
