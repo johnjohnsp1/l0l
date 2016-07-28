@@ -64,7 +64,7 @@ int main(){
         }
 
         else{
-            rlutil::setColor(4);
+            rlutil::setColor(12);
             printf("[-] Unknown command: %s\n", command);
         }
 }
