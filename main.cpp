@@ -12,14 +12,21 @@ int main(){
 
     banner();
 
-    char command[100];
+    char command[100] = "";
 
     // Ctrl+C Detect
     signal(SIGINT, ctrlcDetect);
 
     while(1){
 
+        // Set Blue Color
+        rlutil::setColor(9);
+
         printf("l0l >");
+
+        // Set White Color
+        rlutil::setColor(15);
+
         gets(command);
 
         char *str;
@@ -42,6 +49,10 @@ int main(){
         }
 
         else if(strcmp(command,"os") == 0){
+            // Set Green Color
+            rlutil::setColor(2);
+
+
             char *os =  shorter(command,3);
             printf("\n");
             system(os);
@@ -53,6 +64,7 @@ int main(){
         }
 
         else{
+            rlutil::setColor(4);
             printf("[-] Unknown command: %s\n", command);
         }
 }

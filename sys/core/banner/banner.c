@@ -25,7 +25,10 @@ void banner(){
     else
         printf("Error!\n");
 
-   while( ( kaka = fgetc(fp) ) != EOF )
+    // Set Red Color
+    rlutil::setColor(12);
+
+    while( ( kaka = fgetc(fp) ) != EOF )
       printf("%c",kaka);
 
     fclose(fp);
@@ -38,12 +41,51 @@ void banner(){
     int backdoorsP = 0;
     int differentOsP = 0;
 
-    printf("        =[ l0l v0.1       -  BETA                               ]\n");
-    printf(" + -- --=[ %d shellcode    -  %d Different OS                     ]\n", shellcodeP, differentOsP);
-    printf(" + -- --=[ %d encoders     -  (Shellcodes/executable files)      ]\n", encodersP);
-    printf(" + -- --=[ %d injector     -  (PE,ELF,DLL,RAR,DEB etc...)        ]\n", injectorP);
-    printf(" + -- --=[ %d backdoors    -  (ReverseShell)                     ]\n", backdoorsP);
-    printf(" + -- --=[ Open Source    :  https://github.com/roissy/l0l      ]\n");
+    // Set Red Color
+    // rlutil::setColor(12);
+
+
+    // Set Green Color
+    // rlutil::setColor(2);
+
+    rlutil::setColor(2);
+    printf("        =[ l0l v0.1       -");
+    rlutil::setColor(12);
+    printf("  BETA                               ");
+    rlutil::setColor(2);
+    printf("]\n");
+
+    printf(" + -- --=[ %d shellcode    -", shellcodeP);
+    rlutil::setColor(12);
+    printf("  %d Different OS                     ", differentOsP);
+    rlutil::setColor(2);
+    printf("]\n");
+
+
+    printf(" + -- --=[ %d encoders     -", encodersP);
+    rlutil::setColor(12);
+    printf("  (Shellcodes/executable files)      ");
+    rlutil::setColor(2);
+    printf("]\n");
+
+
+    printf(" + -- --=[ %d injector     -", injectorP);
+    rlutil::setColor(12);
+    printf("  (PE,ELF,DLL,RAR,DEB etc...)        ");
+    rlutil::setColor(2);
+    printf("]\n");
+
+    printf(" + -- --=[ %d backdoors    -", backdoorsP);
+    rlutil::setColor(12);
+    printf("  (ReverseShell)                    rlutil::setColor(12); ");
+    rlutil::setColor(2);
+    printf("]\n");
+
+    printf(" + -- --=[ Open Source    :");
+    rlutil::setColor(12);
+    printf("  https://github.com/roissy/l0l      ");
+    rlutil::setColor(2);
+    printf("]\n");
 
     printf("\n");
 

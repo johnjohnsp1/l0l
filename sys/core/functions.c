@@ -26,9 +26,12 @@ void clear(){
 // Help Menu Function
 void help(){
 
+    // Set Green Color
+    rlutil::setColor(2);
+
     printf("\nUsage Commands\n");
     printf("===============\n");
-    printf("\n\t    Commands\t\tDescription\n");
+    printf("\t    Commands\t\tDescription\n");
     printf("\t    ----------\t \t--------------\n");
     printf("\t    help    \t\tHelp Menu\n");
     printf("\t    os      \t\tCommand directly ur computer\n");
@@ -40,13 +43,21 @@ void help(){
 
 // Close Function
 void closeApp(){
-    printf("\n[*] Trying to exit..\n");
+
+    // Set White Color
+    rlutil::setColor(15);
+
+    printf("\nThanks for using l0l .d !\n");
     exit(0);
 }
 
 // Ctrl + C Catch Function
 void ctrlcDetect(int qwe) {
     signal(SIGINT, ctrlcDetect);
+
+    // Set White Color
+    rlutil::setColor(15);
+
     printf("\n[*] (Ctrl + C) Detected. Trying to exit..\n");
     exit(0);
 }
