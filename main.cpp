@@ -125,5 +125,6 @@ int main(){
         }
 }
 
+    rlutil::resetColor();
     return 0;
 }
