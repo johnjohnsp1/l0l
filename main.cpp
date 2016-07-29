@@ -60,7 +60,7 @@ int main(){
                 rlutil::setColor(2);
                 std::cout <<
                                 "\nos Command\n"
-                                "-----------\n"
+                                "============\n"
                                 "\tDescription: Command directly ur computer\n"
                                 "\tUsage: os (command)\n"
                                 "\tExp: os ver\n";
@@ -128,5 +128,6 @@ int main(){
 }
 
     rlutil::resetColor();
+
     return 0;
 }
