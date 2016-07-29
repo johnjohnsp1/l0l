@@ -49,7 +49,7 @@ void banner(){
     // rlutil::setColor(2);
 
     rlutil::setColor(2);
-    printf("        =[ l0l v0.1       -");
+    printf("        =[ l0l v1         -");
     rlutil::setColor(12);
     printf("  BETA                               ");
     rlutil::setColor(2);
