@@ -37,6 +37,10 @@ void help(){
     printf("\t    os      \t\tCommand directly ur computer\n");
     printf("\t    banner  \t\tShow Banner\n");
     printf("\t    clear   \t\tClear the menu\n");
+    printf("\t    show shellcodes\tShow Shellcodes of Current Database\n");
+    printf("\t    show backdoors\tShow Backdoors of Current Database\n");
+    printf("\t    show injectors\tShow Injectors(Shellcode,dll,so etc..)\n");
+    printf("\t    show encoders\tShow Encoders(Py,Ruby,PHP,Shellcode etc..)\n");
     printf("\t    exit    \t\tClose Application\n\n");
 
 }
