@@ -112,7 +112,9 @@ int main(){
                     backdoorList();
                 }
                 else{
-                    printf("kaka\n");
+                        // Set Red Color
+                        rlutil::setColor(12);
+                        printf("[-] Unknown type: %s\n", str);
                 }
 
             }

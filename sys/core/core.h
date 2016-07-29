@@ -8,7 +8,7 @@
 
 /* libs */
 
-#include "libs/rlutil/rlutil.h"
+#include "libs/rlutil.h"
 
 /* Core */
 
