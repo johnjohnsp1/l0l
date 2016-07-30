@@ -12,6 +12,9 @@ int main(){
 
     banner();
 
+    std::string usetxt = "kaka";
+    std::cout << usetxt;
+
     // Ctrl+C Detect
     signal(SIGINT, ctrlcDetect);
 
@@ -22,7 +25,9 @@ int main(){
         // Set Blue Color
         rlutil::setColor(9);
 
-        printf("l0l >");
+        printf("l0l ");
+//        printf("%s", usetxt);
+        printf(">");
 
         // Set White Color
         rlutil::setColor(15);
@@ -118,6 +123,40 @@ int main(){
                 }
 
             }
+        }
+
+        else if(strcmp(command, "use") == 0){
+
+                str =  shorter(command,4);
+
+                if(command[4] == '\0'){
+                        rlutil::setColor(2);
+                         std::cout <<
+                                "\nuse Command\n"
+                                "=============\n"
+                                "\tDescription: Execute the specified module.\n"
+                                "\tUsage: use (Module)\n"
+                                "\tExp: use kaka\n\n"
+                                "To see the modules, use the show command.\n\n";
+                }
+                else if(strcmp(str, "kaka") == 0){
+                    // Set Green Color
+                    rlutil::setColor(2);
+                    std::cout << "Is a Test Module (:\n";
+//                    malloc(strlen(name)+1)
+ //                   strcpy(usetxt, str);
+                    printf("%s", str);
+
+                }
+
+                else{
+                    // Set Red Color
+                    rlutil::setColor(12);
+                    printf("[-] Unknown module: %s\n", str);
+
+                }
+
+
         }
 
         else{

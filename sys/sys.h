@@ -9,6 +9,8 @@
 /* Standart C++ Headers */
 
 #include <iostream>
+using namespace std;
+
 
 
 /* Standart C Headers */
