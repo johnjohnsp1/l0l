@@ -11,9 +11,8 @@
 int main(){
 
     banner();
+    string twopoint = "", usetxt = "";
 
-    std::string usetxt = "kaka";
-    std::cout << usetxt;
 
     // Ctrl+C Detect
     signal(SIGINT, ctrlcDetect);
@@ -24,10 +23,16 @@ int main(){
 
         // Set Blue Color
         rlutil::setColor(9);
+        cout << "l0l";
+        // Set White Color
+        rlutil::setColor(15);
+        cout << twopoint;
+        // Set Red Color
+        rlutil::setColor(12);
+        cout << usetxt;
+        rlutil::setColor(9);
 
-        printf("l0l ");
-//        printf("%s", usetxt);
-        printf(">");
+        printf(" >");
 
         // Set White Color
         rlutil::setColor(15);
@@ -63,7 +68,7 @@ int main(){
             if(command[3] == '\0'){
                 // Set Green Color
                 rlutil::setColor(2);
-                std::cout <<
+                cout <<
                                 "\nos Command\n"
                                 "============\n"
                                 "\tDescription: Command directly ur computer\n"
@@ -86,7 +91,7 @@ int main(){
             if(command[5] == '\0'){
                 // Set Green Color
                 rlutil::setColor(2);
-                std::cout <<
+                cout <<
                                 "\nshow Command\n"
                                 "============\n"
                                 "\tDescription: The specified module type list.\n"
@@ -121,7 +126,6 @@ int main(){
                         rlutil::setColor(12);
                         printf("[-] Unknown type: %s\n", str);
                 }
-
             }
         }
 
@@ -131,32 +135,33 @@ int main(){
 
                 if(command[4] == '\0'){
                         rlutil::setColor(2);
-                         std::cout <<
+                         cout <<
                                 "\nuse Command\n"
                                 "=============\n"
                                 "\tDescription: Execute the specified module.\n"
                                 "\tUsage: use (Module)\n"
-                                "\tExp: use kaka\n\n"
+                                "\tExp: use teat\n\n"
                                 "To see the modules, use the show command.\n\n";
                 }
-                else if(strcmp(str, "kaka") == 0){
+                else if(strcmp(str, "test") == 0){
                     // Set Green Color
                     rlutil::setColor(2);
-                    std::cout << "Is a Test Module (:\n";
-//                    malloc(strlen(name)+1)
- //                   strcpy(usetxt, str);
-                    printf("%s", str);
+                    cout << "\nIs a Test Module (:\n\n";
 
+                    twopoint = ":";
+                    usetxt=str;
                 }
 
                 else{
                     // Set Red Color
                     rlutil::setColor(12);
                     printf("[-] Unknown module: %s\n", str);
-
                 }
+        }
 
-
+        else if(strcmp(command, "back") == 0){
+            twopoint="";
+            usetxt ="";
         }
 
         else{

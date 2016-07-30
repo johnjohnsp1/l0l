@@ -41,6 +41,8 @@ void help(){
     printf("\t    show backdoors\tShow Backdoors of Current Database\n");
     printf("\t    show injectors\tShow Injectors(Shellcode,dll,so etc..)\n");
     printf("\t    show encoders\tShow Encoders(Py,Ruby,PHP,Shellcode etc..)\n");
+    printf("\t    use     \t\tExecute the specified module.\n");
+    printf("\t    back    \t\tA back goes into operation.\n");
     printf("\t    exit    \t\tClose Application\n\n");
 
 }

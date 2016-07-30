@@ -12,7 +12,6 @@
 using namespace std;
 
 
-
 /* Standart C Headers */
 
 #include <stdio.h>

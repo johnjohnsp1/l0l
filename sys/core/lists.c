@@ -8,12 +8,12 @@
 
 void noModule(){
 
-    std::cout << "\n\tThere's no module. (:\n\n";
+    cout << "\n\tThere's no module. (:\n\n";
 
 }
 void encoderlist(){
 
-    std::cout <<
+    cout <<
                     "\n\tName\t\tRank\t\tDescription\n"
                     "\t----\t\t----\t\t-----------\n";
 
@@ -23,7 +23,7 @@ void encoderlist(){
 
 void injectorList(){
 
-    std::cout <<
+    cout <<
                     "\n\tArchitecture\t\t\tVersion\n"
                     "\t------------\t\t\t-------\n";
 
@@ -33,21 +33,21 @@ void injectorList(){
 
 void shellcodeList(){
 
-    std::cout <<
+    cout <<
                     "\n\tLinux x86\n"
                     "\t===========\n";
 
     noModule();
 
 
-    std::cout <<
+    cout <<
                     "\n\tLinux x64\n"
                     "\t===========\n";
 
     noModule();
 
 
-    std::cout <<
+    cout <<
                     "\n\tLinux x86/x64 [Works on both]\n"
                     "\t===========\n";
 
@@ -55,7 +55,7 @@ void shellcodeList(){
 
 
 
-    std::cout <<
+    cout <<
                     "\n\tLinux ARM\n"
                     "\t===========\n";
 
@@ -63,7 +63,7 @@ void shellcodeList(){
 
 
 
-    std::cout <<
+    cout <<
                     "\n\tLinux MIPS\n"
                     "\t===========\n";
 
@@ -71,21 +71,21 @@ void shellcodeList(){
 
 
 
-    std::cout <<
+    cout <<
                     "\n\tSolaris x86\n"
                     "\t===========\n";
 
     noModule();
 
 
-    std::cout <<
+    cout <<
                     "\n\tWindows\n"
                     "\t===========\n";
 
     noModule();
 
 
-    std::cout <<
+    cout <<
                     "\n\tOSX x86\n"
                     "\t===========\n";
 
@@ -93,7 +93,7 @@ void shellcodeList(){
 
 
 
-    std::cout <<
+    cout <<
                     "\n\tOSX x64\n"
                     "\t===========\n";
 
@@ -101,14 +101,14 @@ void shellcodeList(){
 
 
 
-    std::cout <<
+    cout <<
                     "\n\tFreeBSD x86\n"
                     "\t===========\n";
 
     noModule();
 
 
-    std::cout <<
+    cout <<
                     "\n\tFreeBSD x64\n"
                     "\t===========\n";
 
@@ -120,13 +120,13 @@ void shellcodeList(){
 
 void backdoorList(){
 
-    std::cout <<    "\n\tBinaries\n"
+    cout <<    "\n\tBinaries\n"
                     "\t==========\n";
 
     noModule();
 
 
-    std::cout <<    "\n\tScripting Payloads\n"
+    cout <<    "\n\tScripting Payloads\n"
                     "\t===================\n";
 
     noModule();
