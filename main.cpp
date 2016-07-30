@@ -11,7 +11,7 @@
 int main(){
 
     banner();
-    string twopoint = "", usetxt = "";
+
 
 
     // Ctrl+C Detect
@@ -19,20 +19,13 @@ int main(){
 
     while(1){
 
-        char command[100] = "", *str, str2;
+        char command[100] = "", *str;
+
+        mainConsole:
 
         // Set Blue Color
         rlutil::setColor(9);
-        cout << "l0l";
-        // Set White Color
-        rlutil::setColor(15);
-        cout << twopoint;
-        // Set Red Color
-        rlutil::setColor(12);
-        cout << usetxt;
-        rlutil::setColor(9);
-
-        printf(" >");
+        cout << "l0l >";
 
         // Set White Color
         rlutil::setColor(15);
@@ -130,6 +123,9 @@ int main(){
         }
 
         else if(strcmp(command, "use") == 0){
+                // #include "sys/core/use.c"
+
+                string twopoint = "", usetxt = "";
 
                 str =  shorter(command,4);
 
@@ -143,25 +139,53 @@ int main(){
                                 "\tExp: use teat\n\n"
                                 "To see the modules, use the show command.\n\n";
                 }
-                else if(strcmp(str, "test") == 0){
-                    // Set Green Color
-                    rlutil::setColor(2);
-                    cout << "\nIs a Test Module (:\n\n";
-
-                    twopoint = ":";
-                    usetxt=str;
-                }
 
                 else{
-                    // Set Red Color
-                    rlutil::setColor(12);
-                    printf("[-] Unknown module: %s\n", str);
-                }
-        }
 
-        else if(strcmp(command, "back") == 0){
-            twopoint="";
-            usetxt ="";
+
+                        if(strcmp(str, "test") == 0){
+                            // Set Green Color
+                            rlutil::setColor(2);
+                            cout << "\nIs a Test Module (:\n\n";
+
+                            twopoint = ":";
+                            usetxt=str;
+                        }
+
+                        else{
+                            // Set Red Color
+                            rlutil::setColor(12);
+                            printf("[-] Unknown module: %s\n", str);
+                        }
+
+
+                    do{
+                            string kaka;
+                            cin >> kaka;
+
+                            if(kaka=="back"){
+                                goto mainConsole;
+
+                            }
+
+
+
+                    }while(1);
+
+
+
+
+
+                }
+
+
+
+
+
+
+
+
+
         }
 
         else{
