@@ -1,2 +1,2 @@
-l0l: main.cpp
-	g++ -o l0l main.cpp
+l0l: l0l.cpp
+	g++ -o l0l l0l.cpp
