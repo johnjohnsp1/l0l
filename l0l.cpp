@@ -152,7 +152,7 @@ int main(){
                             char usecmd[100] = "";
 
                             rlutil::setColor(9);
-                            cout << "l0l ";
+                            cout << "l0l";
                             // Set White Color
                             rlutil::setColor(15);
                             cout << ":";
@@ -166,8 +166,42 @@ int main(){
 
                             gets(usecmd);
                             if (strlen(command) == 0 || command[0] == '\r' || command[0] == '\n');
+
+                            // Use Commands
+
+
+
                             if(strcmp(usecmd, "back") == 0){
                                 goto mainConsole;
+                            }
+                            else if (strcmp(usecmd,"exit") == 0){
+                                closeApp();
+                            }
+                            else if(strcmp(usecmd,"os") == 0){
+
+                                // Set White Color
+                                rlutil::setColor(15);
+
+                                str =  shorter(usecmd,3);
+                                printf("\n");
+
+                                if(usecmd[3] == '\0'){
+                                    // Set Green Color
+                                    rlutil::setColor(2);
+                                    cout <<
+                                                    "\nos Command\n"
+                                                    "============\n"
+                                                    "\tDescription: Command directly ur computer\n"
+                                                    "\tUsage: os (command)\n"
+                                                    "\tExp: os ver\n";
+
+                                }else{
+                                    system(str);
+                                }
+                                printf("\n");
+                            }
+                            else if (strcmp(usecmd, "help") == 0){
+
                             }
 
                         }while(1);
