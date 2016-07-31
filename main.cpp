@@ -12,8 +12,6 @@ int main(){
 
     banner();
 
-
-
     // Ctrl+C Detect
     signal(SIGINT, ctrlcDetect);
 
