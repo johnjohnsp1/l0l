@@ -123,7 +123,7 @@ int main(){
                         rlutil::setColor(2);
                          cout <<
                                 "\nuse Command\n"
-                                "=============\n"
+                                "===========\n"
                                 "\tDescription: Execute the specified module.\n"
                                 "\tUsage: use (Module)\n"
                                 "\tExp: use teat\n\n"
@@ -133,10 +133,9 @@ int main(){
                 else{
 
                         if(strcmp(str, "test") == 0){
-                            // Set Green Color
-                            rlutil::setColor(2);
-                            cout << "\nIs a Test Module (:\n\n";
-
+                            usetxt=str;
+                        }
+                        else if(strcmp(str, "kaka") == 0){
                             usetxt=str;
                         }
 
