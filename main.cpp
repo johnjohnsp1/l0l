@@ -2,8 +2,6 @@
     l0l - Exploit Development Kit
     Author:roissy
     Greetz:b3mb4m
-
-    File : main.cpp
 */
 
 #include "main.h"
@@ -39,15 +37,12 @@ int main(){
         else if (strcmp(command,"help") == 0){
             help();
         }
-
         else if (strcmp(command,"banner") == 0){
             banner();
         }
-
         else if (strcmp(command,"clear") == 0){"\\n";
             clear();
         }
-
         else if(strcmp(command,"os") == 0){
 
             // Set White Color
@@ -75,7 +70,6 @@ int main(){
         else if (strcmp(command,"exit") == 0){
             closeApp();
         }
-
         else if(strcmp(command,"show") == 0){
             str =  shorter(command,5);
 
@@ -119,7 +113,6 @@ int main(){
                 }
             }
         }
-
         else if(strcmp(command, "use") == 0){
                 // #include "sys/core/use.c"
 
@@ -140,7 +133,6 @@ int main(){
 
                 else{
 
-
                         if(strcmp(str, "test") == 0){
                             // Set Green Color
                             rlutil::setColor(2);
@@ -157,16 +149,29 @@ int main(){
                         }
 
 
-                    do{
-                            string kaka;
-                            cin >> kaka;
+                        do{
+                            char usecmd[100] = "";
 
-                            if(kaka=="back"){
+                            rlutil::setColor(9);
+                            cout << "l0l ";
+                            // Set White Color
+                            rlutil::setColor(15);
+                            cout << twopoint;
+                            // Set Red Color
+                            rlutil::setColor(12);
+                            cout << usetxt;
+                            rlutil::setColor(9);
+                            printf(" >");
+                            // Set White Color
+                            rlutil::setColor(15);
+
+                            gets(usecmd);
+                            if (strlen(command) == 0 || command[0] == '\r' || command[0] == '\n');
+                            if(strcmp(usecmd, "back") == 0){
                                 goto mainConsole;
-
                             }
 
-                    }while(1);
+                        }while(1);
 
                 }
         }

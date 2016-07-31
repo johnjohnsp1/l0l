@@ -1,10 +1,3 @@
-/**
-    l0l - Exploit Development Kit
-    Author:roissy
-    Greetz:b3mb4m
-
-    File : functions.c
-*/
 
 // Os detection and Clear Screen Functions.
 
@@ -29,21 +22,22 @@ void help(){
     // Set Green Color
     rlutil::setColor(2);
 
-    printf("\nUsage Commands\n");
-    printf("===============\n");
-    printf("\t    Commands\t\tDescription\n");
-    printf("\t    ----------\t \t--------------\n");
-    printf("\t    help    \t\tHelp Menu\n");
-    printf("\t    os      \t\tCommand directly ur computer\n");
-    printf("\t    banner  \t\tShow Banner\n");
-    printf("\t    clear   \t\tClear the menu\n");
-    printf("\t    show shellcodes\tShow Shellcodes of Current Database\n");
-    printf("\t    show backdoors\tShow Backdoors of Current Database\n");
-    printf("\t    show injectors\tShow Injectors(Shellcode,dll,so etc..)\n");
-    printf("\t    show encoders\tShow Encoders(Py,Ruby,PHP,Shellcode etc..)\n");
-    printf("\t    use     \t\tExecute the specified module.\n");
-    printf("\t    back    \t\tA back goes into operation.\n");
-    printf("\t    exit    \t\tClose Application\n\n");
+   	cout <<
+				"\nUsage Commands\n"
+				"===============\n"
+				"\t    Commands\t\tDescription\n"
+				"\t    ----------\t \t--------------\n"
+				"\t    help    \t\tHelp Menu\n"
+				"\t    os      \t\tCommand directly ur computer\n"
+				"\t    banner  \t\tShow Banner\n"
+				"\t    clear   \t\tClear the menu\n"
+				"\t    show shellcodes\tShow Shellcodes of Current Database\n"
+				"\t    show backdoors\tShow Backdoors of Current Database\n"
+				"\t    show injectors\tShow Injectors(Shellcode,dll,so etc..\n"
+				"\t    show encoders\tShow Encoders(Py,Ruby,PHP,Shellcode etc..\n"
+				"\t    use     \t\tExecute the specified module.\n"
+				"\t    back    \t\tA back goes into operation.\n"
+				"\t    exit    \t\tClose Application\n\n";
 
 }
 
@@ -64,7 +58,7 @@ void ctrlcDetect(int qwe) {
     // Set White Color
     rlutil::setColor(15);
 
-    printf("\n[*] (Ctrl + C) Detected. Trying to exit..\n");
+    printf("\nCtrl + C Detected. Trying to exit..\n");
     exit(0);
 }
 
