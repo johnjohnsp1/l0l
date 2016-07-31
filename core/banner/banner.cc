@@ -1,10 +1,3 @@
-/**
-    l0l - Exploit Development Kit
-    Author:roissy
-    Greetz:b3mb4m
-
-    File : banner.c
-*/
 
 void banner(){
    srand ( time(NULL) );
@@ -13,15 +6,15 @@ void banner(){
    FILE *fp;
 
     if(x == 1)
-        fp = fopen("sys/core/banner/banner1.txt","r");
+        fp = fopen("core/banner/banner1.txt","r");
     else if(x == 2)
-        fp = fopen("sys/core/banner/banner2.txt", "r");
+        fp = fopen("core/banner/banner2.txt", "r");
     else if(x == 3)
-        fp = fopen("sys/core/banner/banner3.txt", "r");
+        fp = fopen("core/banner/banner3.txt", "r");
     else if(x == 4)
-        fp = fopen("sys/core/banner/banner4.txt", "r");
+        fp = fopen("core/banner/banner4.txt", "r");
     else if(x == 5)
-        fp = fopen("sys/core/banner/banner5.txt", "r");
+        fp = fopen("core/banner/banner5.txt", "r");
     else
         printf("Error!\n");
 

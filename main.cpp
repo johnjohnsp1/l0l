@@ -4,7 +4,7 @@
     Greetz:b3mb4m
 */
 
-#include "main.h"
+#include "core/core.h"
 
 int main(){
 

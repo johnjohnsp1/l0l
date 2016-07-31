@@ -1,7 +1,7 @@
 /**
     l0l - Exploit Development Kit
     Author:roissy
-    Greetz:b3mb4m
+    Greetz:B3mb4m
 
     File : use.c
 
