@@ -15,9 +15,10 @@ int main(){
 
     while(1){
 
+        mainConsole:
+
         char command[100] = "", *str;
 
-        mainConsole:
 
         // Set Blue Color
         rlutil::setColor(9);
@@ -126,7 +127,7 @@ int main(){
                                 "===========\n"
                                 "\tDescription: Execute the specified module.\n"
                                 "\tUsage: use (Module)\n"
-                                "\tExp: use teat\n\n"
+                                "\tExp: use test\n\n"
                                 "To see the modules, use the show command.\n\n";
                 }
 
