@@ -17,17 +17,19 @@ l0l Project is Exploit Dev. Kit bla bla bla ... now development first step.. aft
 
 	Usage Commands
 	===============
-				Commands            Description
-				----------          --------------
-				help                Help Menu
-				os                  Command directly ur computer
-				banner              Show Banner
-				clear               Clear the menu
-				show shellcodes     Show Shellcodes of Current Database
-				show backdoors      Show Backdoors of Current Database
-				show injectors      Show Injectors(Shellcode,dll,so etc..)
-				show encoders       Show Encoders(Py,Ruby,PHP,Shellcode etc..)
-				exit                Close Application
+	            Commands            Description
+	            ----------          --------------
+	            help                Help Menu
+	            os                  Command directly ur computer
+	            banner              Show Banner
+	            clear               Clear the menu
+	            show shellcodes     Show Shellcodes of Current Database
+	            show backdoors      Show Backdoors of Current Database
+	            show injectors      Show Injectors(Shellcode,dll,so etc..
+	            show encoders       Show Encoders(Py,Ruby,PHP,Shellcode etc..
+	            use                 Execute the specified module.
+	            back                A back goes into operation.
+	            exit                Close Application
     
 -----
 #Screenshot
