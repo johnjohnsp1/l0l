@@ -114,9 +114,8 @@ int main(){
             }
         }
         else if(strcmp(command, "use") == 0){
-                // #include "sys/core/use.c"
 
-                string twopoint = "", usetxt = "";
+                string usetxt;
 
                 str =  shorter(command,4);
 
@@ -138,7 +137,6 @@ int main(){
                             rlutil::setColor(2);
                             cout << "\nIs a Test Module (:\n\n";
 
-                            twopoint = ":";
                             usetxt=str;
                         }
 
@@ -146,6 +144,7 @@ int main(){
                             // Set Red Color
                             rlutil::setColor(12);
                             printf("[-] Unknown module: %s\n", str);
+                            goto mainConsole;
                         }
 
 
@@ -156,7 +155,7 @@ int main(){
                             cout << "l0l ";
                             // Set White Color
                             rlutil::setColor(15);
-                            cout << twopoint;
+                            cout << ":";
                             // Set Red Color
                             rlutil::setColor(12);
                             cout << usetxt;
