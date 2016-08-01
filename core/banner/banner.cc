@@ -1,3 +1,8 @@
+    int shellcodeP = 1;
+    int encodersP = 1;
+    int injectorP = 1;
+    int backdoorsP = 1;
+    int differentOsP = 11;
 
 void banner(){
    srand ( time(NULL) );
@@ -28,11 +33,7 @@ void banner(){
 
     printf("\n");
 
-    int shellcodeP = 0;
-    int encodersP = 0;
-    int injectorP = 0;
-    int backdoorsP = 0;
-    int differentOsP = 0;
+
 
     // Set Red Color
     // rlutil::setColor(12);
