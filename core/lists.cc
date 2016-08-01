@@ -8,9 +8,8 @@ void encoderlist(){
 
     cout <<
                     "\n\tName\t\tRank\t\tDescription\n"
-                    "\t----\t\t----\t\t-----------\n";
-
-    noModule();
+                    "\t----\t\t----\t\t-----------\n\n"
+                    "\tkaka\t\t\t\tTest Module\n";
 
 }
 

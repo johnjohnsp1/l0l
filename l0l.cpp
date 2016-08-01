@@ -41,7 +41,7 @@ int main(){
         else if (strcmp(command,"banner") == 0){
             banner();
         }
-        else if (strcmp(command,"clear") == 0){"\\n";
+        else if (strcmp(command,"clear") == 0){
             clear();
         }
         else if(strcmp(command,"os") == 0){
@@ -53,15 +53,7 @@ int main(){
             printf("\n");
 
             if(command[3] == '\0'){
-                // Set Green Color
-                rlutil::setColor(2);
-                cout <<
-                                "\nos Command\n"
-                                "============\n"
-                                "\tDescription: Command directly ur computer\n"
-                                "\tUsage: os (command)\n"
-                                "\tExp: os ver\n";
-
+                osCommand();
             }else{
                 system(str);
             }
@@ -75,21 +67,7 @@ int main(){
             str =  shorter(command,5);
 
             if(command[5] == '\0'){
-                // Set Green Color
-                rlutil::setColor(2);
-                cout <<
-                                "\nshow Command\n"
-                                "============\n"
-                                "\tDescription: The specified module type list.\n"
-                                "\tUsage: show (Module Type)\n"
-                                "\tExp: show injectors\n\n"
-                                "Module Types\n"
-                                "============\n"
-                                "\tshellcodes\n"
-                                "\tencoders\n"
-                                "\tinjentors\n"
-                                "\tbackdoors\n\n";
-
+                showCommand();
             }
             else{
 
@@ -116,28 +94,23 @@ int main(){
         }
         else if(strcmp(command, "use") == 0){
 
-                string usetxt;
+                string usetxt, type;
 
                 str =  shorter(command,4);
 
                 if(command[4] == '\0'){
-                        rlutil::setColor(2);
-                         cout <<
-                                "\nuse Command\n"
-                                "===========\n"
-                                "\tDescription: Execute the specified module.\n"
-                                "\tUsage: use (Module)\n"
-                                "\tExp: use test\n\n"
-                                "To see the modules, use the show command.\n\n";
+                    useCommand();
                 }
 
                 else{
 
                         if(strcmp(str, "test") == 0){
                             usetxt=str;
+                            type = "injector";
                         }
                         else if(strcmp(str, "kaka") == 0){
                             usetxt=str;
+                            type = "encoder";
                         }
 
                         else{
@@ -149,7 +122,8 @@ int main(){
 
 
                         do{
-                            char usecmd[100] = "";
+
+                            char usecmd[100] = "", *str2;
 
                             rlutil::setColor(9);
                             cout << "l0l";
@@ -165,11 +139,12 @@ int main(){
                             rlutil::setColor(15);
 
                             gets(usecmd);
+
+                            strtok(usecmd, " ");
+
                             if (strlen(command) == 0 || command[0] == '\r' || command[0] == '\n');
 
                             // Use Commands
-
-
 
                             if(strcmp(usecmd, "back") == 0){
                                 goto mainConsole;
@@ -182,33 +157,37 @@ int main(){
                                 // Set White Color
                                 rlutil::setColor(15);
 
-                                str =  shorter(usecmd,3);
+                                str2 =  shorter(usecmd,3);
                                 printf("\n");
 
                                 if(usecmd[3] == '\0'){
-                                    // Set Green Color
-                                    rlutil::setColor(2);
-                                    cout <<
-                                                    "\nos Command\n"
-                                                    "============\n"
-                                                    "\tDescription: Command directly ur computer\n"
-                                                    "\tUsage: os (command)\n"
-                                                    "\tExp: os ver\n";
-
+                                    osCommand();
                                 }else{
-                                    system(str);
+                                    system(str2);
                                 }
                                 printf("\n");
                             }
-                            else if (strcmp(usecmd, "help") == 0){
-
+                            else if(strcmp(usecmd, "clear") == 0){
+                                clear();
+                            }
+                            else if(strcmp(usecmd, "help") == 0){
+                                    if(type == "injector"){
+                                        injectorHelp();
+                                    }
+                                    else if(type == "encoder"){
+                                        encoderHelp();
+                                    }
+                                    else if(type == "shellcode"){
+                                        shellcodeHelp();
+                                    }
+                                    else if(type == "backdoor"){
+                                        backdoorHelp();
+                                    }
                             }
 
                         }while(1);
-
                 }
         }
-
         else{
             // Set Red Color
             rlutil::setColor(12);
