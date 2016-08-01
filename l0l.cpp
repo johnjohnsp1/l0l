@@ -103,15 +103,30 @@ int main(){
                 }
 
                 else{
-
-                        if(strcmp(str, "test") == 0){
+                        // Injector Test Module
+                        if(strcmp(str, "patpat") == 0){
                             usetxt=str;
                             type = "injector";
                         }
+
+                        // Encoder Test Module
                         else if(strcmp(str, "kaka") == 0){
                             usetxt=str;
                             type = "encoder";
                         }
+
+                        // Shellcode Test Module
+                        else if(strcmp(str, "taktak") == 0){
+                            usetxt=str;
+                            type = "shellcode";
+                        }
+
+                        // Backdoor Test Module
+                        else if(strcmp(str, "hoppidi") == 0){
+                            usetxt=str;
+                            type = "backdoor";
+                        }
+
 
                         else{
                             // Set Red Color
@@ -119,7 +134,6 @@ int main(){
                             printf("[-] Unknown module: %s\n", str);
                             goto mainConsole;
                         }
-
 
                         do{
 

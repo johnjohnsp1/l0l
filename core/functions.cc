@@ -52,7 +52,9 @@ void injectorHelp(){
             "\t    Commands\t\tDescription\n"
             "\t    ----------\t \t--------------\n"
             "\t    help    \t\tHelp Menu\n"
-            "\t    back    \t\tA back goes into operation.\n\n";
+            "\t    os      \t\tCommand directly ur computer\n"
+            "\t    back    \t\tA back goes into operation.\n"
+            "\t    exit    \t\tClose Application\n\n";
 
 }
 
@@ -67,7 +69,9 @@ void encoderHelp(){
             "\t    Commands\t\tDescription\n"
             "\t    ----------\t \t--------------\n"
             "\t    help    \t\tHelp Menu\n"
-            "\t    back    \t\tA back goes into operation.\n\n";
+            "\t    os      \t\tCommand directly ur computer\n"
+            "\t    back    \t\tA back goes into operation.\n"
+            "\t    exit    \t\tClose Application\n\n";
 
 }
 
@@ -82,7 +86,9 @@ void shellcodeHelp(){
             "\t    Commands\t\tDescription\n"
             "\t    ----------\t \t--------------\n"
             "\t    help    \t\tHelp Menu\n"
-            "\t    back    \t\tA back goes into operation.\n\n";
+            "\t    os      \t\tCommand directly ur computer\n"
+            "\t    back    \t\tA back goes into operation.\n"
+            "\t    exit    \t\tClose Application\n\n";
 
 }
 
@@ -97,7 +103,9 @@ void backdoorHelp(){
             "\t    Commands\t\tDescription\n"
             "\t    ----------\t \t--------------\n"
             "\t    help    \t\tHelp Menu\n"
-            "\t    back    \t\tA back goes into operation.\n\n";
+            "\t    os      \t\tCommand directly ur computer\n"
+            "\t    back    \t\tA back goes into operation.\n"
+            "\t    exit    \t\tClose Application\n\n";
 
 }
 
