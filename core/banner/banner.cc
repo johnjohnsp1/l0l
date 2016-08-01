@@ -51,7 +51,7 @@ void banner(){
 
     printf(" + -- --=[ %d shellcode    -", shellcodeP);
     rlutil::setColor(12);
-    printf("  %d Different OS                     ", differentOsP);
+    printf("  %d Different OS                    ", differentOsP);
     rlutil::setColor(2);
     printf("]\n");
 
