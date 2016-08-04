@@ -2,6 +2,14 @@
 
 l0l Project is Exploit Dev. Kit bla bla bla ... now development first step.. after beta version. Thanks (:
 
+# Communication
+
+![alt tag](http://i.hizliresim.com/pPyM7o.png)
+
+xmpp : roissy@dukgo.com
+
+email : roissy@tuta.io
+
 #Install
 -----
 
