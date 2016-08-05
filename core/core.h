@@ -1,9 +1,3 @@
-/* C++ Headers */
-
-#include <iostream>
-using namespace std;
-
-
 /* C Headers */
 
 #include <stdio.h>
@@ -13,6 +7,10 @@ using namespace std;
 #include <time.h>
 #include <signal.h>
 
+/* C++ Headers */
+
+#include <iostream>
+using namespace std;
 
 /* lib */
 
@@ -25,5 +23,4 @@ using namespace std;
 #include "l0l.cc"
 #include "functions.cc"
 #include "lists.cc"
-
 
