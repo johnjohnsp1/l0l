@@ -1,7 +1,7 @@
 /**
     l0l - Exploit Development Kit
     Author:roissy
-    Greetz:b3mb4m
+    Greetz:B3mB4m
 */
 
 #include "core/core.h"
@@ -18,7 +18,6 @@ int main(){
         mainConsole:
 
         char command[100] = "", *str;
-
 
         // Set Blue Color
         rlutil::setColor(9);
