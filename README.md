@@ -41,4 +41,4 @@ email : roissy@tuta.io
     
 -----
 #Screenshot
-![alt tag](http://i.hizliresim.com/OMgYBD.png)
+![alt tag](http://i.hizliresim.com/1Nm4zD.png)
