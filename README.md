@@ -17,6 +17,8 @@ email : roissy@tuta.io
     or, l0l.cpp compile the file..
     Exp:
     $ g++ -o l0l l0l.cpp
+    Run:
+    $ ./l0l
     
 -----
 #Usage
