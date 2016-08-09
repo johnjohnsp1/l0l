@@ -1,4 +1,4 @@
-# l0l - Exploit Development Kit
+# l0l
 
 l0l exploit a development kit. Yet, are being developed. Then the beta version will be published. Thanks (:
 
