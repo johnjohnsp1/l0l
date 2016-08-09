@@ -2,7 +2,7 @@
 
 l0l Project is Exploit Dev. Kit bla bla bla ... now development first step.. after beta version. Thanks (:
 
-# Work for me ?!
+# Works for me?
 
 ![alt tag](http://i.hizliresim.com/B8Xm9g.jpg)
 
