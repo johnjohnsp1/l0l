@@ -2,7 +2,7 @@
 
 l0l exploit a development kit. Yet, are being developed. Then the beta version will be published. Thanks (:
 
-# Works for me!
+# Work for me!
 
 ![alt tag](http://i.hizliresim.com/B8Xm9g.jpg)
 
