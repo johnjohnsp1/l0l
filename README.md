@@ -1,6 +1,6 @@
 # l0l
 
-l0l exploit a development kit. Yet, are being developed. Then the beta version will be published. Thanks (:
+l0l a exploit development kit. Yet, are being developed. Then the beta version will be published. Thanks (:
 
 # Work for me!
 
