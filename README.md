@@ -1,6 +1,6 @@
 # l0l - Exploit Development Kit
 
-l0l Project is Exploit Dev. Kit bla bla bla ... now development first step.. after beta version. Thanks (:
+l0l exploit a development kit. Yet, are being developed. Then the beta version will be published. Thanks (:
 
 # Works for me!
 
