@@ -14,8 +14,7 @@ email : roissy@tuta.io
 -----
 
     $ make 
-    or,
-    l0l.cpp compile file..
+    or, l0l.cpp compile the file..
     Exp:
     $ g++ -o l0l l0l.cpp
     
