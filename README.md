@@ -4,7 +4,7 @@ l0l Project is Exploit Dev. Kit bla bla bla ... now development first step.. aft
 
 # Work for me ?!
 
-![alt tag](http://i.hizliresim.com/nEVv81.jpg)
+![alt tag](http://i.hizliresim.com/Mk5zOa.jpg)
 
 xmpp : roissy@dukgo.com
 
