@@ -2,9 +2,9 @@
 
 l0l Project is Exploit Dev. Kit bla bla bla ... now development first step.. after beta version. Thanks (:
 
-# Communication
+# Work for me ?!
 
-![alt tag](http://i.hizliresim.com/pPyM7o.png)
+![alt tag](http://i.hizliresim.com/nEVv81.jpg)
 
 xmpp : roissy@dukgo.com
 
