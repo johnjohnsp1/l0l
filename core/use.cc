@@ -60,12 +60,26 @@ string usetxt, type;
 
                             strtok(usecmd, " ");
 
-                            if (strlen(command) == 0 || command[0] == '\r' || command[0] == '\n');
+                            if (strlen(usecmd) == 0 || usecmd[0] == '\r' || usecmd[0] == '\n');
 
                             // Use Commands
 
-                            if(strcmp(usecmd, "back") == 0){
+                            else if(strcmp(usecmd, "back") == 0){
                                 goto mainConsole;
+                            }
+                            else if(strcmp(usecmd, "help") == 0){
+                                    if(type == "injector"){
+                                        injectorHelp();
+                                    }
+                                    else if(type == "encoder"){
+                                        encoderHelp();
+                                    }
+                                    else if(type == "shellcode"){
+                                        shellcodeHelp();
+                                    }
+                                    else if(type == "backdoor"){
+                                        backdoorHelp();
+                                    }
                             }
                             else if (strcmp(usecmd,"exit") == 0){
                                 closeApp();
@@ -88,20 +102,10 @@ string usetxt, type;
                             else if(strcmp(usecmd, "clear") == 0){
                                 clear();
                             }
-                            else if(strcmp(usecmd, "help") == 0){
-                                    if(type == "injector"){
-                                        injectorHelp();
-                                    }
-                                    else if(type == "encoder"){
-                                        encoderHelp();
-                                    }
-                                    else if(type == "shellcode"){
-                                        shellcodeHelp();
-                                    }
-                                    else if(type == "backdoor"){
-                                        backdoorHelp();
-                                    }
+                            else{
+                                // Set Red Color
+                                rlutil::setColor(12);
+                                printf("[-] Unknown command: %s\n", usecmd);
                             }
-
                         }while(1);
                 }

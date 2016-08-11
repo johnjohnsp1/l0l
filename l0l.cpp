@@ -49,11 +49,11 @@ int main(){
             rlutil::setColor(15);
 
             str =  shorter(command,3);
-            printf("\n");
 
             if(command[3] == '\0'){
                 osCommand();
             }else{
+                printf("\n");
                 system(str);
             }
             printf("\n");
