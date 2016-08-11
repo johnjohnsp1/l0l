@@ -82,7 +82,7 @@ void shellcodeHelp(){
 
     cout <<
             "\nShellcode Commands\n"
-            "================\n"
+            "==================\n"
             "\t    Commands\t\tDescription\n"
             "\t    ----------\t \t--------------\n"
             "\t    help    \t\tHelp Menu\n"

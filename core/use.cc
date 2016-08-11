@@ -52,7 +52,7 @@ string usetxt, type;
                             rlutil::setColor(12);
                             cout << usetxt;
                             rlutil::setColor(9);
-                            printf(" >");
+                            printf(" > ");
                             // Set White Color
                             rlutil::setColor(15);
 
@@ -90,11 +90,11 @@ string usetxt, type;
                                 rlutil::setColor(15);
 
                                 str2 =  shorter(usecmd,3);
-                                printf("\n");
 
                                 if(usecmd[3] == '\0'){
                                     osCommand();
                                 }else{
+                                    printf("\n");
                                     system(str2);
                                 }
                                 printf("\n");

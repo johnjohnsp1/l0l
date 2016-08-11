@@ -21,7 +21,7 @@ int main(){
 
         // Set Blue Color
         rlutil::setColor(9);
-        cout << "l0l >";
+        cout << "l0l > ";
 
         // Set White Color
         rlutil::setColor(15);
