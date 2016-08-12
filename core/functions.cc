@@ -20,7 +20,7 @@ void clear(){
 void help(){
 
     // Set Green Color
-    rlutil::setColor(2);
+    rlutil::setColor(10);
 
    	cout <<
             "\nUsage Commands\n"
@@ -44,7 +44,7 @@ void help(){
 void injectorHelp(){
 
     // Set Green Color
-    rlutil::setColor(2);
+    rlutil::setColor(10);
 
     cout <<
             "\nInjector Commands\n"
@@ -61,7 +61,7 @@ void injectorHelp(){
 void encoderHelp(){
 
     // Set Green Color
-    rlutil::setColor(2);
+    rlutil::setColor(10);
 
     cout <<
             "\nEncoder Commands\n"
@@ -78,7 +78,7 @@ void encoderHelp(){
 void shellcodeHelp(){
 
     // Set Green Color
-    rlutil::setColor(2);
+    rlutil::setColor(10);
 
     cout <<
             "\nShellcode Commands\n"
@@ -95,7 +95,7 @@ void shellcodeHelp(){
 void backdoorHelp(){
 
     // Set Green Color
-    rlutil::setColor(2);
+    rlutil::setColor(10);
 
     cout <<
             "\nBackdoor Commands\n"
@@ -112,7 +112,7 @@ void backdoorHelp(){
 void osCommand(){
 
     // Set Green Color
-    rlutil::setColor(2);
+    rlutil::setColor(10);
     cout <<
             "\nos Command\n"
             "============\n"
@@ -125,7 +125,7 @@ void osCommand(){
 void showCommand(){
 
     // Set Green Color
-    rlutil::setColor(2);
+    rlutil::setColor(10);
     cout <<
             "\nshow Command\n"
             "============\n"
@@ -144,7 +144,7 @@ void showCommand(){
 
 void useCommand(){
 
-    rlutil::setColor(2);
+    rlutil::setColor(10);
     cout <<
             "\nuse Command\n"
             "===========\n"

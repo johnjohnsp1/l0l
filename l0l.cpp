@@ -70,7 +70,7 @@ int main(){
             }
             else{
 
-                rlutil::setColor(2);
+                rlutil::setColor(10);
 
                 if(str[0] == 'e' && str[1] == 'n' && str[2] == 'c' && str[3] == 'o' && str[4] == 'd' && str[5] == 'e' && str[6] == 'r' && str[7] == 's' && str[8] == '\0'){
                     encoderlist();
