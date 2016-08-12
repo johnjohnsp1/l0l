@@ -20,8 +20,6 @@ void banner(){
         fp = fopen("core/banner/banner4.txt", "r");
     else if(x == 5)
         fp = fopen("core/banner/banner5.txt", "r");
-    else
-        printf("Error!\n");
 
     // Set Red Color
     rlutil::setColor(12);
