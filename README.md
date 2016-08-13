@@ -42,4 +42,4 @@ email : roissy@tuta.io
     
 -----
 #Screenshot
-![alt tag](http://i.hizliresim.com/9GvZrO.png)
+![alt tag](http://i.hizliresim.com/kEYr5A.png)
