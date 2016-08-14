@@ -59,10 +59,10 @@ do{
         rlutil::setColor(10);
         cout <<
                 "\n\tModule options (" << modulen << "):\n\n"
-                "\t\tName\t\tCurrent Setting\t\t\tRequired\tDescription\n"
-                "\t\t----\t\t---------------\t\t\t--------\t-----------\n"
-                "\t\tLHOST\t\t" << lhost << "\t\t\t\t" << "yes" <<"\t\tConnection Host\n"
-                "\t\tLPORT\t\t" << lport << "\t\t\t\t" << "yes" <<"\t\tConnection Port\n\n";
+                "\t\tName\t\tCurrent Setting\t\tRequired \tDescription\n"
+                "\t\t----\t\t---------------\t\t-------- \t-----------\n"
+                "\t\tLHOST\t\t" << lhost << "\t\t" << "\tyes" <<"\t\tConnection Host\n"
+                "\t\tLPORT\t\t" << lport << "\t\t" << "\tyes" <<"\t\tConnection Port\n\n";
 
     }
     else if(strcmp(usecmd2, "set") == 0){
@@ -88,7 +88,7 @@ do{
 
     else if(strcmp(usecmd2, "unset") == 0){
 
-        str2 = shorter(usecmd2,4);
+        str2 = shorter(usecmd2,6);
 
         if( str2[0] == 'L' && str2[1] == 'H' && str2[2] == 'O' && str2[3] == 'S' && str2[4] == 'T'){
             lhost = "None";
