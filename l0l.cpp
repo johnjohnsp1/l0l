@@ -92,7 +92,7 @@ int main(){
             }
         }
         else if(strcmp(command, "use") == 0){
-            // Include use statement
+            // Include ..
             #include "core/mecanism.cpp"
         }
         else{
