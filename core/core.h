@@ -24,3 +24,5 @@ using namespace std;
 #include "functions.cpp"
 #include "lists.cpp"
 
+/* Mecanism */
+

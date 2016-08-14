@@ -1,47 +1,4 @@
-string usetxt, type;
-
-                str =  shorter(command,4);
-
-                if(command[4] == '\0'){
-                    useCommand();
-                }
-                else{
-
-
-
-                        // Injector Modules
-                        if(strcmp(str, "patpat") == 0){
-                            usetxt=str;
-                            type = "injector";
-                        }
-
-                        // Encoder Modules
-                        else if(strcmp(str, "kaka") == 0){
-                            usetxt=str;
-                            type = "encoder";
-                        }
-
-                        // Shellcode Modules
-                        else if(strcmp(str, "taktak") == 0){
-                            usetxt=str;
-                            type = "shellcode";
-                        }
-
-                        // Backdoor Modules
-                        else if(strcmp(str, "hoppidi") == 0){
-                            usetxt=str;
-                            type = "backdoor";
-                        }
-
-
-                        else{
-                            // Set Red Color
-                            rlutil::setColor(12);
-                            printf("[-] Unknown module: %s\n", str);
-                            goto mainConsole;
-                        }
-
-                        do{
+do{
 
                             char usecmd[100] = "", *str2;
 
@@ -70,18 +27,8 @@ string usetxt, type;
                                 goto mainConsole;
                             }
                             else if(strcmp(usecmd, "help") == 0){
-                                    if(type == "injector"){
-                                        injectorHelp();
-                                    }
-                                    else if(type == "encoder"){
-                                        encoderHelp();
-                                    }
-                                    else if(type == "shellcode"){
-                                        shellcodeHelp();
-                                    }
-                                    else if(type == "backdoor"){
                                         backdoorHelp();
-                                    }
+
                             }
                             else if (strcmp(usecmd,"exit") == 0){
                                 closeApp();
@@ -110,4 +57,3 @@ string usetxt, type;
                                 printf("[-] Unknown command: %s\n", usecmd);
                             }
                         }while(1);
-                }
