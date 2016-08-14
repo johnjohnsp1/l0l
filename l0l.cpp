@@ -85,9 +85,9 @@ int main(){
                     backdoorList();
                 }
                 else{
-                        // Set Red Color
-                        rlutil::setColor(12);
-                        printf("[-] Unknown type: %s\n", str);
+                    // Set Red Color
+                    rlutil::setColor(12);
+                    printf("[-] Unknown type: %s\n", str);
                 }
             }
         }

@@ -41,17 +41,14 @@ else{
 
     //  By type of Console launch.
 
-    if(type == "injectors"){
-        // is under construction.
-        // #include "injectors/i_console.cpp"
+    if(type == "injector"){
+        #include "injectors/i_console.cpp"
     }
-    if(type == "encoder"){
-        // is under construction.
-        // #include "encoders/e_console.cpp"
+    else if(type == "encoder"){
+        #include "encoders/e_console.cpp"
     }
-    if(type == "shellcode"){
-        // is under construction.
-        // #include "shellcodes/s_console.cpp"
+    else if(type == "shellcode"){
+        #include "shellcodes/s_console.cpp"
     }
     else if(type == "backdoor"){
         #include "backdoors/b_console.cpp"
