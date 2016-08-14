@@ -117,7 +117,7 @@ void backdoorList(){
     cout <<
             "\n\tScripting Payloads\n"
             "\t===================\n\n"
-            "\tbackdoors/windows/ps/reverse_tcp\n\n";
+            "\tbackdoors/windows/ps/reverse_tcp\n\n\n";
 
 }
 

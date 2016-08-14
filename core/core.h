@@ -6,6 +6,7 @@
 #include <string.h>
 #include <time.h>
 #include <signal.h>
+#include <direct.h>
 
 /* C++ Headers */
 
@@ -26,4 +27,9 @@ using namespace std;
 #include "banner/banner.cpp"
 #include "functions.cpp"
 #include "lists.cpp"
+
+/* Backdoors */
+
+#include "backdoors/b_functions.cpp"
+
 

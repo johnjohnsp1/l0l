@@ -52,6 +52,7 @@ else{
         #include "shellcodes/s_console.cpp"
     }
     else if(type == "backdoor"){
+        string lhost = "None", lport = "None";
         #include "backdoors/b_console.cpp"
     }
 
