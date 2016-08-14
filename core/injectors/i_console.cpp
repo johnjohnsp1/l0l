@@ -20,7 +20,7 @@ do{
 
     if (strlen(usecmd) == 0 || usecmd[0] == '\r' || usecmd[0] == '\n');
 
-    // Use Commands
+    // Injector Commands
 
     else if(strcmp(usecmd, "back") == 0){
         goto mainConsole;

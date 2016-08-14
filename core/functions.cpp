@@ -1,4 +1,4 @@
- 
+
 // Os detection and Clear Screen Functions.
 
 #ifdef __unix__
@@ -165,7 +165,7 @@ void closeApp(){
     // Set White Color
     rlutil::setColor(15);
 
-    printf("\nThanks for using l0l .d !\n");
+    printf("\nThanks for using l0l !\n");
     exit(0);
 }
 

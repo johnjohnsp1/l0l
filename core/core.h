@@ -10,6 +10,10 @@
 /* C++ Headers */
 
 #include <iostream>
+#include <string>
+#include <algorithm>
+#include <fstream>
+
 using namespace std;
 
 /* lib */
@@ -20,9 +24,6 @@ using namespace std;
 /* Core */
 
 #include "banner/banner.cpp"
-#include "l0l.cpp"
 #include "functions.cpp"
 #include "lists.cpp"
-
-/* Mecanism */
 

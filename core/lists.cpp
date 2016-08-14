@@ -110,15 +110,14 @@ void backdoorList(){
 
     cout <<
             "\n\tBinaries\n"
-            "\t==========\n\n"
-            "\thoppidi (test)\n\n";
+            "\t==========\n";
 
+    noModule();
 
     cout <<
             "\n\tScripting Payloads\n"
-            "\t===================\n\n";
-
-    noModule();
+            "\t===================\n\n"
+            "\tbackdoors/windows/ps/reverse_tcp\n\n";
 
 }
 

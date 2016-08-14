@@ -7,12 +7,14 @@ if(command[4] == '\0'){
 }
 else{
 
+
+    if(strcmp(str, "patpat") == 0);
+
     // Injector Modules
-    if(strcmp(str, "patpat") == 0){
+    else if(strcmp(str, "patpat") == 0){
         usetxt=str;
         type = "injector";
     }
-
 
     // Encoder Modules
     else if(strcmp(str, "kaka") == 0){
@@ -28,10 +30,9 @@ else{
     }
 
     // Backdoor Modules
-    else if(strcmp(str, "hoppidi") == 0){
-        usetxt=str;
-        type = "backdoor";
-    }
+    #include "backdoors/b_modules.cpp"
+
+
     else{
         // Set Red Color
         rlutil::setColor(12);
