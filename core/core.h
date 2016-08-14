@@ -19,8 +19,8 @@ using namespace std;
 
 /* Core */
 
-#include "banner/banner.cc"
-#include "l0l.cc"
-#include "functions.cc"
-#include "lists.cc"
+#include "banner/banner.cpp"
+#include "l0l.cpp"
+#include "functions.cpp"
+#include "lists.cpp"
 

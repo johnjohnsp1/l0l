@@ -5,27 +5,29 @@ string usetxt, type;
                 if(command[4] == '\0'){
                     useCommand();
                 }
-
                 else{
-                        // Injector Test Module
+
+
+
+                        // Injector Modules
                         if(strcmp(str, "patpat") == 0){
                             usetxt=str;
                             type = "injector";
                         }
 
-                        // Encoder Test Module
+                        // Encoder Modules
                         else if(strcmp(str, "kaka") == 0){
                             usetxt=str;
                             type = "encoder";
                         }
 
-                        // Shellcode Test Module
+                        // Shellcode Modules
                         else if(strcmp(str, "taktak") == 0){
                             usetxt=str;
                             type = "shellcode";
                         }
 
-                        // Backdoor Test Module
+                        // Backdoor Modules
                         else if(strcmp(str, "hoppidi") == 0){
                             usetxt=str;
                             type = "backdoor";
