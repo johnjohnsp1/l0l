@@ -93,7 +93,7 @@ int main(){
         }
         else if(strcmp(command, "use") == 0){
             // Include use statement
-            #include "core/use.cc"
+            #include "core/use.cpp"
         }
         else{
             // Set Red Color
