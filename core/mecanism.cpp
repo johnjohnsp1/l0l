@@ -8,7 +8,7 @@ if(command[4] == '\0'){
 else{
 
 
-    if(strcmp(str, "patpat") == 0);
+    if(strcmp(str, "test") == 0);
 
     // Injector Modules
     else if(strcmp(str, "patpat") == 0){
