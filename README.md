@@ -39,6 +39,52 @@ email : roissy@tuta.io
 	            use                 Execute the specified module.
 	            back                A back goes into operation.
 	            exit                Close Application
+	            
+	            
+	Injector Commands
+	=================
+	            Commands            Description
+	            ----------          --------------
+	            help                Help Menu
+	            os                  Command directly ur computer
+	            back                A back goes into operation.
+	            exit                Close Application
+	            
+	            
+	Encoder Commands
+	================
+	            Commands            Description
+	            ----------          --------------
+	            help                Help Menu
+	            os                  Command directly ur computer
+	            back                A back goes into operation.
+	            exit                Close Application
+	            
+	            
+	Shellcode Commands
+	==================
+	            Commands            Description
+	            ----------          --------------
+	            help                Help Menu
+	            os                  Command directly ur computer
+	            back                A back goes into operation.
+	            exit                Close Application
+
+
+	Backdoor Commands
+	=================
+	            Commands            Description
+	            ----------          --------------
+	            exit                Close Application
+	            set                 Set Value Of Options To Modules
+	            unset               Unset Value Of Options To Modules
+	            help                Help menu
+	            back                A back goes into operation.
+	            os                  Command directly ur computer
+	            clear               Clear the menu
+	            generate            Generate backdoor
+	            show options        Show current options of selected module
+	            
     
 -----
 #Screenshots
