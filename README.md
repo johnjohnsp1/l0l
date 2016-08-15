@@ -41,5 +41,13 @@ email : roissy@tuta.io
 	            exit                Close Application
     
 -----
-#Screenshot
-![alt tag](http://i.hizliresim.com/kEYr5A.png)
+#Screenshots
+![alt tag](http://i.hizliresim.com/ZYAkzo.png)
+
+![alt tag](http://i.hizliresim.com/oEY3NR.png)
+
+![alt tag](http://i.hizliresim.com/lE0jNg.png)
+
+![alt tag](http://i.hizliresim.com/VEgazj.png)
+
+
