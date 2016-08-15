@@ -1,8 +1,8 @@
-    int shellcodeP = 1;
-    int encodersP = 1;
-    int injectorP = 1;
-    int backdoorsP = 1;
-    int differentOsP = 11;
+    int shellcodeP = 0;
+    int encodersP = 0;
+    int injectorP = 0;
+    int backdoorsP = 6;
+    int differentOsP = 0;
 
 void banner(){
    srand ( time(NULL) );
@@ -46,7 +46,7 @@ void banner(){
 
     printf(" + -- --=[ %d shellcode    -", shellcodeP);
     rlutil::setColor(12);
-    printf("  %d Different OS                    ", differentOsP);
+    printf("  %d Different OS                     ", differentOsP);
     rlutil::setColor(10);
     printf("]\n");
 

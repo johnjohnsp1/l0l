@@ -52,7 +52,7 @@ else{
         #include "shellcodes/s_console.cpp"
     }
     else if(type == "backdoor"){
-        string lhost = "None", lport = "None";
+        string lhost = "None", lport = "None", serefsiz = "\t\t";
         #include "backdoors/b_console.cpp"
     }
 

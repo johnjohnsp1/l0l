@@ -30,6 +30,6 @@ using namespace std;
 
 /* Backdoors */
 
-#include "backdoors/b_functions.cpp"
+#include "backdoors/scripting_payloads.cpp"
 
 

@@ -1,7 +1,7 @@
 
 void noModule(){
 
-    cout << "\n\tThere's no module. (:\n\n";
+    cout << "\n\t There's no module. (:\n\n";
 
 }
 void encoderlist(){
@@ -117,7 +117,12 @@ void backdoorList(){
     cout <<
             "\n\tScripting Payloads\n"
             "\t===================\n\n"
-            "\tbackdoors/windows/ps/reverse_tcp\n\n\n";
+            "\t backdoors/unix/python/reverse_tcp\n"
+            "\t backdoors/unix/perl/reverse_tcp\n"
+            "\t backdoors/unix/bash/reverse_tcp\n"
+            "\t backdoors/unix/ruby/reverse_tcp\n"
+            "\t backdoors/windows/asm/reverse_tcp\n"
+            "\t backdoors/windows/ps/reverse_tcp\n\n\n";
 
 }
 

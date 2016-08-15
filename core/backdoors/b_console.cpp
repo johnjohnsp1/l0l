@@ -59,10 +59,10 @@ do{
         rlutil::setColor(10);
         cout <<
                 "\n\tModule options (" << modulen << "):\n\n"
-                "\t\tName\t\tCurrent Setting\t\tRequired \tDescription\n"
-                "\t\t----\t\t---------------\t\t-------- \t-----------\n"
+                "\t\tName\t\tCurrent Setting" << serefsiz << "Required \tDescription\n"
+                "\t\t----\t\t---------------" << serefsiz <<"-------- \t-----------\n"
                 "\t\tLHOST\t\t" << lhost << "\t\t" << "\tyes" <<"\t\tConnection Host\n"
-                "\t\tLPORT\t\t" << lport << "\t\t" << "\tyes" <<"\t\tConnection Port\n\n";
+                "\t\tLPORT\t\t" << lport << serefsiz << "\tyes" <<"\t\tConnection Port\n\n";
 
     }
     else if(strcmp(usecmd2, "set") == 0){
@@ -71,12 +71,18 @@ do{
 
         if( str2[0] == 'L' && str2[1] == 'H' && str2[2] == 'O' && str2[3] == 'S' && str2[4] == 'T' && str2[5] == ' ' ){
             str3 = shorter(str2,6);
+
+            if(strlen(str3)>7){ serefsiz = "\t\t\t"; } else { serefsiz = "\t\t"; }
+
             lhost = str3;
             cout << "\nLHOST -> " << str3 << "\n\n";
 
         }
         else if(str2[0] == 'L' && str2[1] == 'P' && str2[2] == 'O' && str2[3] == 'R' && str2[4] == 'T' && str2[5] == ' '){
             str3 = shorter(str2,6);
+
+            if(strlen(str3)>7){ serefsiz = "\t\t\t"; } else { serefsiz = "\t\t"; }
+
             lport = str3;
             cout << "\nLPORT -> " << str3 << "\n\n";
         }
@@ -107,8 +113,19 @@ do{
             cout << "\nSet options before generate payload.\n\n";
         }
         else{
-            if(modulen == "backdoors/windows/ps/reverse_tcp")
+            if(modulen == "backdoors/unix/python/reverse_tcp")
+                unix_python_reverse_tcp(lhost,lport);
+            else if(modulen == "backdoors/unix/perl/reverse_tcp")
+                unix_perl_reverse_tcp(lhost,lport);
+            else if(modulen == "backdoors/unix/bash/reverse_tcp")
+                unix_bash_reverse_tcp(lhost,lport);
+            else if(modulen == "backdoors/unix/ruby/reverse_tcp")
+                unix_ruby_reverse_tcp(lhost,lport);
+            else if(modulen == "backdoors/windows/asm/reverse_tcp")
+                windows_asm_reverse_tcp(lhost,lport);
+            else if(modulen == "backdoors/windows/ps/reverse_tcp")
                 windows_ps_reverse_tcp(lhost,lport);
+
 
         }
     }
