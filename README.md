@@ -97,7 +97,8 @@ email : roissy@tuta.io
 ![alt tag](http://i.hizliresim.com/VEgazj.png)
 
 
-#Thanks for help
+#Thanks
 
+ollend
 b3mb4m
 bomch4nte
