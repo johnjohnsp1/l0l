@@ -1,5 +1,7 @@
 # l0l
 
+![Build Status](http://imgh.us/passing_1.svg)
+
 l0l a exploit development kit. Yet, are being developed. Then the beta version will be published. Thanks (:
 
 # Work for me!
