@@ -100,7 +100,7 @@ int main(int argc, char * argv[]){
             rlutil::setColor(12);
             printf("[-] Unknown command: %s\n", command);
         }
-}
+    }
 
     rlutil::resetColor();
 
