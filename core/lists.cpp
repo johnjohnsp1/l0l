@@ -24,7 +24,7 @@ void injectorList(){
 
 void shellcodeList(){
 
-    cout <<
+  /*  cout <<
             "\n\tLinux x86\n"
             "\t===========\n\n"
             "\ttaktak (test)\n";
@@ -57,7 +57,6 @@ void shellcodeList(){
             "\t===========\n";
 
     noModule();
-
 
 
     cout <<
@@ -102,7 +101,7 @@ void shellcodeList(){
             "\t===========\n";
 
     noModule();
-
+*/
 
 }
 
