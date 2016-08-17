@@ -11,15 +11,15 @@ void banner(){
    FILE *fp;
 
     if(x == 1)
-        fp = fopen("core/banner/banner1.txt","r");
+        fp = fopen("core/banner/logo1.txt","r");
     else if(x == 2)
-        fp = fopen("core/banner/banner2.txt", "r");
+        fp = fopen("core/banner/logo2.txt", "r");
     else if(x == 3)
-        fp = fopen("core/banner/banner3.txt", "r");
+        fp = fopen("core/banner/logo3.txt", "r");
     else if(x == 4)
-        fp = fopen("core/banner/banner4.txt", "r");
+        fp = fopen("core/banner/logo4.txt", "r");
     else if(x == 5)
-        fp = fopen("core/banner/banner5.txt", "r");
+        fp = fopen("core/banner/logo5.txt", "r");
 
     // Set Red Color
     rlutil::setColor(12);
