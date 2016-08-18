@@ -27,7 +27,7 @@ void shellcodeList(){
     cout <<
             "\n\tLinux x86\n"
             "\t===========\n\n"
-            "\ttaktak (test)\n";
+            "\ttaktak (test)\n\n";
 /*
 
     cout <<
