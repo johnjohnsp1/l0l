@@ -24,10 +24,11 @@ void injectorList(){
 
 void shellcodeList(){
 
-  /*  cout <<
+    cout <<
             "\n\tLinux x86\n"
             "\t===========\n\n"
             "\ttaktak (test)\n";
+/*
 
     cout <<
             "\n\tLinux x64\n"
