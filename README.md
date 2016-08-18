@@ -2,6 +2,16 @@
 
 l0l a exploit development kit. Yet, are being developed. Then the beta version will be published. Thanks (:
 
+
+# Work for me!
+ 
+![alt tag](http://i.hizliresim.com/B8Xm9g.jpg)
+ 
+xmpp : roissy@dukgo.com
+ 
+email : roissy@tuta.io
+ 
+ 
 #Install
 -----
 
