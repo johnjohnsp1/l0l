@@ -5,7 +5,7 @@ l0l a exploit development kit. Yet, are being developed. Then the beta version w
 
 # Work for me!
  
-![alt tag](http://i.hizliresim.com/B8Xm9g.jpg)
+![alt tag](http://i.hizliresim.com/a3ZrM7.jpg)
  
 xmpp : roissy@dukgo.com
  
