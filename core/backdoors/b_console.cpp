@@ -72,7 +72,7 @@ do{
         if( str2[0] == 'L' && str2[1] == 'H' && str2[2] == 'O' && str2[3] == 'S' && str2[4] == 'T' && str2[5] == ' ' ){
             str3 = shorter(str2,6);
 
-            if(strlen(str3)>7){ serefsiz = "\t\t\t"; } else { serefsiz = "\t\t"; }
+            if(strlen(str3)>7){ serefsiz = "\t\t\t"; }
 
             lhost = str3;
             cout << "\nLHOST -> " << str3 << "\n\n";
@@ -81,7 +81,7 @@ do{
         else if(str2[0] == 'L' && str2[1] == 'P' && str2[2] == 'O' && str2[3] == 'R' && str2[4] == 'T' && str2[5] == ' '){
             str3 = shorter(str2,6);
 
-            if(strlen(str3)>7){ serefsiz = "\t\t\t"; } else { serefsiz = "\t\t"; }
+            if(strlen(str3)>7){ serefsiz = "\t\t\t"; }
 
             lport = str3;
             cout << "\nLPORT -> " << str3 << "\n\n";

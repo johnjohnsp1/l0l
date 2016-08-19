@@ -23,12 +23,12 @@ void injectorList(){
 }
 
 void shellcodeList(){
-
+/*
     cout <<
             "\n\tLinux x86\n"
             "\t===========\n\n"
             "\ttaktak (test)\n\n";
-/*
+
 
     cout <<
             "\n\tLinux x64\n"
@@ -66,14 +66,16 @@ void shellcodeList(){
 
     noModule();
 
+*/
 
     cout <<
             "\n\tWindows\n"
-            "\t===========\n";
+            "\t===========\n\n"
+            "\t windows/messagebox\n\n";
 
-    noModule();
 
 
+/*
     cout <<
             "\n\tOSX x86\n"
             "\t===========\n";
@@ -102,7 +104,9 @@ void shellcodeList(){
             "\t===========\n";
 
     noModule();
+
 */
+
 
 }
 
