@@ -24,10 +24,7 @@ else{
 
 
     // Shellcode Modules
-    else if(strcmp(str, "windows/messagebox") == 0){
-        usetxt=str;
-        type = "shellcode";
-    }
+    #include "shellcodes/s_modules.cpp"
 
     // Backdoor Modules
     #include "backdoors/b_modules.cpp"

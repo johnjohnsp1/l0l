@@ -66,10 +66,16 @@ do{
                 "\t\tName\t\tCurrent Setting" << serefsiz << "Required \tDescription\n"
                 "\t\t----\t\t---------------" << serefsiz <<"-------- \t-----------\n";
 
+        if(modulen == "windows/messagebox")
+        {
+            cout <<
+                    "\t\tmessage\t\t" << message << serefsiz << "\tyes" << "\t\tConnection Host\n";
+
+        }
+
         cout <<
-                "\t\tmessage\t\t" << message << serefsiz << "\tyes" << "\t\tConnection Host\n\n";
                 "\t\thost\t\t" << host << serefsiz << "\tyes" <<"\t\tConnection Host\n"
-                "\t\tport\t\t" << port << serefsiz << "\tyes" << "\t\tConnection Port\n"
+                "\t\tport\t\t" << port << serefsiz << "\tyes" << "\t\tConnection Port\n\n";
 
 
 
