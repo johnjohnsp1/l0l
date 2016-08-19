@@ -24,7 +24,7 @@ else{
 
 
     // Shellcode Modules
-    else if(strcmp(str, "taktak") == 0){
+    else if(strcmp(str, "windows/messagebox") == 0){
         usetxt=str;
         type = "shellcode";
     }
@@ -49,12 +49,12 @@ else{
         #include "encoders/e_console.cpp"
     }
     else if(type == "shellcode"){
+        string host = "None", port = "None", message = "None", serefsiz = "\t\t";
         #include "shellcodes/s_console.cpp"
     }
     else if(type == "backdoor"){
         string lhost = "None", lport = "None", serefsiz = "\t\t";
         #include "backdoors/b_console.cpp"
     }
-
 
 }
