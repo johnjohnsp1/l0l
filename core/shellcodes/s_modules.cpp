@@ -1,4 +1,4 @@
-// Shellcode Modules
+// Shellcodes
 
 else if(strcmp(str, "windows/messagebox") == 0){
     usetxt=str;

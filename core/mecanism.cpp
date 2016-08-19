@@ -42,7 +42,8 @@ else{
     if(type == "injector"){
         #include "injectors/i_console.cpp"
     }
-    else if(type == "encoder"){
+    else if(type == "encoder")
+    {
         #include "encoders/e_console.cpp"
     }
     else if(type == "shellcode"){
