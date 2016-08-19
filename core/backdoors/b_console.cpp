@@ -125,8 +125,6 @@ do{
                 windows_asm_reverse_tcp(lhost,lport);
             else if(modulen == "backdoors/windows/ps/reverse_tcp")
                 windows_ps_reverse_tcp(lhost,lport);
-
-
         }
     }
 
