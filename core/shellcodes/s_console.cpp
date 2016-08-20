@@ -137,7 +137,6 @@ do{
         }
 
     }
-
     else if(strcmp(usecmd2, "unset") == 0){
 
         str2 = shorter(usecmd2,6);
@@ -165,7 +164,6 @@ do{
             // generate. .. .
         }
     }
-
     else{
         // Set Red Color
         rlutil::setColor(12);
