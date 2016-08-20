@@ -7,20 +7,21 @@ l0l a exploit development kit. Yet, are being developed. Then the beta version w
  
 ![alt tag](http://i.hizliresim.com/gXnMob.gif)
  
+email : roissy@tuta.io 
+
 jabber : roissy@exploit.im
- 
-email : roissy@tuta.io
  
  
 #Install
 -----
-
+	- Requirements : g++ and Python.
     $ make 
     or, l0l.cpp compile the file..
     Exp:
     $ g++ -o l0l l0l.cpp
     Run:
     $ ./l0l
+	- Have fun (:
     
 -----
 #Usage
@@ -41,7 +42,22 @@ email : roissy@tuta.io
 	            use                 Execute the specified module.
 	            back                A back goes into operation.
 	            exit                Close Application
-	            
+	
+
+	Shellcode Commands
+	==================
+				Commands            Description
+				----------          --------------
+				exit                Close Application
+				set                 Set Value Of Options To Modules
+				unset               Unset Value Of Options To Modules
+				help                Help menu
+				back                A back goes into operation.
+				os                  Command directly ur computer
+				clear               Clear the menu
+				generate            Generate shellcode
+				show options        Show current options of selected module
+	
 	            
 	Injector Commands
 	=================
@@ -63,16 +79,6 @@ email : roissy@tuta.io
 	            exit                Close Application
 	            
 	            
-	Shellcode Commands
-	==================
-	            Commands            Description
-	            ----------          --------------
-	            help                Help Menu
-	            os                  Command directly ur computer
-	            back                A back goes into operation.
-	            exit                Close Application
-
-
 	Backdoor Commands
 	=================
 	            Commands            Description
@@ -90,10 +96,10 @@ email : roissy@tuta.io
     
 -----
 #Screenshots
-![alt tag](http://i.hizliresim.com/ZYAkzo.png)
+![alt tag](http://i.hizliresim.com/J3p1NY.png)
 
-![alt tag](http://i.hizliresim.com/oEY3NR.png)
+![alt tag](http://i.hizliresim.com/znmXLY.png)
 
-![alt tag](http://i.hizliresim.com/lE0jNg.png)
+![alt tag](http://i.hizliresim.com/G3vVN2.png)
 
 ![alt tag](http://i.hizliresim.com/VEgazj.png)
