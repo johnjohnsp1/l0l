@@ -10,8 +10,7 @@ from re import findall
 import codecs
 
 
-
-def stackconvertSTR( string, win=False):
+def stackconvertSTR( string ):
 	db = []
 	if len(string) == 1:	
 		string = codecs.encode(str.encode(string), 'hex')
@@ -21,7 +20,7 @@ def stackconvertSTR( string, win=False):
 	if "/" in string:
 		if len(string) % 4 == 0:
 			string = string
-		elif  len(string) % 4 == 1:
+		elif len(string) % 4 == 1:
 			string = filler( string, 4)
 		elif len(string)	% 4 == 2:
 			string = filler( string, 3)
@@ -31,11 +30,10 @@ def stackconvertSTR( string, win=False):
 			db.append(splitter(string[x:x+4]))
 
 		return "".join(db[::-1])
-
 		#return "".join(db)
 					
 					
-argv = "1"
+argv = "k"
 						
 					
 shellcode =  r"\x33\xc9\x64\x8b\x49\x30\x8b\x49\x0c\x8b"
@@ -53,15 +51,12 @@ shellcode += r"\x57\x66\xb9\x33\x32\x51\x68\x75\x73\x65"
 shellcode += r"\x72\x54\xff\xd0\x57\x68\x6f\x78\x41\x01"
 shellcode += r"\xfe\x4c\x24\x03\x68\x61\x67\x65\x42\x68"
 shellcode += r"\x4d\x65\x73\x73\x54\x50\xff\xd6\x57"
-shellcode += str(stackconvertSTR(argv, True)) 
+shellcode += str(stackconvertSTR(argv))
 shellcode += r"\x8b\xcc\x57\x57\x51\x57"
 shellcode += r"\xff\xd0\x57\x68\x65\x73\x73\x01\xfe\x4c"
 shellcode += r"\x24\x03\x68\x50\x72\x6f\x63\x68\x45\x78"
 shellcode += r"\x69\x74\x54\x53\xff\xd6\x57\xff\xd0"
-					
-		
-		
 
-		
+
 
 print shellcode

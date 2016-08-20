@@ -46,11 +46,11 @@ else{
         #include "encoders/e_console.cpp"
     }
     else if(type == "shellcode"){
-        string host = "None", port = "None", message = "None", serefsiz = "\t\t";
+        string host = "None", port = "None", link = "None";
         #include "shellcodes/s_console.cpp"
     }
     else if(type == "backdoor"){
-        string lhost = "None", lport = "None", serefsiz = "\t\t";
+        string lhost = "None", lport = "None";
         #include "backdoors/b_console.cpp"
     }
 

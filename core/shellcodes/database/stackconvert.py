@@ -22,7 +22,7 @@ def stackconvertSTR( string, win=False):
             string = string
         elif  len(string) % 4 == 1:
             string = filler( string, 4)
-        elif len(string)	% 4 == 2:
+        elif len(string) % 4 == 2:
             string = filler( string, 3)
         elif len(string) % 4 == 3:
             string = filler( string, 2)

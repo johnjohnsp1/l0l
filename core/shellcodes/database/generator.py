@@ -10,8 +10,8 @@ def generator( choose, shellcode, argv="None", argv2="None"):
 
 	if choose == "windows":
 		if shellcode == "messagebox":
-			from .Windows import messagebox
-			from .stackconvert import stackconvertSTR
+			from Windows import messagebox
+			from stackconvert import stackconvertSTR
 			if argv == "None":
 				return messagebox.messagebox( False)
 			else:

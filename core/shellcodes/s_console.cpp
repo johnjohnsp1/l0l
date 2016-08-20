@@ -64,13 +64,13 @@ do{
         cout <<
                 "\n\tModule options (" << modulen << "):\n\n"
                 "\t\tName\t" << "\tDescription" << "\t\tCurrent Setting\n"
-                "\t\t----\t" "\t-----------" << "\t\t---------------\n";
+                "\t\t----\t" "\t-----------\t" << "\t---------------\n";
 
 
-        if(modulen == "windows/messagebox")
+        if(modulen == "windows/download&execute")
         {
             cout <<
-                    "\t\tmessage\t" <<  "\tMessage Box Text\t" << message << "\n\n";
+                    "\t\tlink\t" <<  "\tSource to download exe\t" << link << "\n\n";
 
         }
         else if(modulen == "taktak")
@@ -87,17 +87,15 @@ do{
 
         if(modulen == "qwe");
 
-        else if(modulen == "windows/messagebox")
+        else if(modulen == "windows/download&execute")
         {
-            if( str2[0] == 'm' && str2[1] == 'e' && str2[2] == 's' && str2[3] == 's' && str2[4] == 'a' && str2[5] == 'g' && str2[6] == 'e' && str2[7] == ' ' )
+            if( str2[0] == 'l' && str2[1] == 'i' && str2[2] == 'n' && str2[3] == 'k' && str2[4] == ' ' )
             {
 
-                str3 = shorter(str2,8);
+                str3 = shorter(str2,5);
 
-                if(strlen(str3)>7){ serefsiz = "\t\t\t"; }
-
-                message = str3;
-                cout << "\nmessage -> " << str3 << "\n\n";
+                link = str3;
+                cout << "\nlink -> " << str3 << "\n\n";
 
             }
 
@@ -115,16 +113,12 @@ do{
             if( str2[0] == 'h' && str2[1] == 'o' && str2[2] == 's' && str2[3] == 't' && str2[4] == ' ' ){
                 str3 = shorter(str2,6);
 
-                if(strlen(str3)>7){ serefsiz = "\t\t\t"; }
-
                 host = str3;
                 cout << "\nhost -> " << str3 << "\n\n";
 
             }
             else if(str2[0] == 'p' && str2[1] == 'o' && str2[2] == 'r' && str2[3] == 't' && str2[4] == ' '){
                 str3 = shorter(str2,6);
-
-                if(strlen(str3)>7){ serefsiz = "\t\t\t"; }
 
                 port = str3;
                 cout << "\nport -> " << str3 << "\n\n";
@@ -148,7 +142,7 @@ do{
             port = "None";
         }
         else if( str2[0] == 'm' && str2[1] == 'e' && str2[2] == 's' && str2[3] == 's' && str2[4] == 'a' && str2[5] == 'g' && str2[5] == 'e' ){
-            message = "None";
+            link = "None";
         }
         else{
             rlutil::setColor(12);

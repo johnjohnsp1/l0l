@@ -1,7 +1,11 @@
 from generator import *
 
+class roissy(object):   
+    def __init__(self):
+        self.disassembly = "None"
+
+
+
 argv = raw_input("enter message:")
 
-test = generator( "windows", "messagebox", argv)
-
-print test
+self.disassembly = generator( "windows", "messagebox", argv)
