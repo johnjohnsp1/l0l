@@ -46,7 +46,8 @@ else{
         #include "encoders/e_console.cpp"
     }
     else if(type == "shellcode"){
-        string host = "None", port = "None", link = "None";
+        //string host = "None", port = "None",
+        string args1 = "None", args2 = "None";
         #include "shellcodes/s_console.cpp"
     }
     else if(type == "backdoor"){

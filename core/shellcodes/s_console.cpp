@@ -1,3 +1,11 @@
+/**
+    l0l - Exploit Development Kit
+    Authors:roissy, esw0rmer
+    Greetz:B3mB4m
+
+    Thanks to : ollend, bomch4nte, MrSw7G3R
+*/
+
 do{
     char usecmd[100] = "", usecmd2[100] = "", *str2, *str3;
 
@@ -67,17 +75,16 @@ do{
                 "\t\t----\t" "\t-----------\t" << "\t---------------\n";
 
 
-        if(modulen == "windows/download&execute")
+        if(modulen == "windows/exec")
         {
             cout <<
-                    "\t\tlink\t" <<  "\tSource to download exe\t" << link << "\n\n";
+                    "\t\tcommand\t" <<  "\tCommand to execute\t" << args1 << "\n\n";
 
         }
-        else if(modulen == "taktak")
+        else if(modulen == "windows/messagebox")
         {
             cout <<
-                "\t\thost\t" << "\tConnection Host\t\t" << host << "\n"
-                "\t\tport\t" <<  "\tConnection Port\t\t" << port << "\n\n";
+                    "\t\tmessage\t" <<  "\tMessage Box Text\t" << args1 << "\n\n";
         }
 
     }
@@ -85,43 +92,29 @@ do{
 
         str2 = shorter(usecmd2,4);
 
-        if(modulen == "qwe");
 
-        else if(modulen == "windows/download&execute")
+        if(modulen == "windows/exec")
         {
-            if( str2[0] == 'l' && str2[1] == 'i' && str2[2] == 'n' && str2[3] == 'k' && str2[4] == ' ' )
+            if( str2[0] == 'c' && str2[1] == 'o' && str2[2] == 'm' && str2[3] == 'm' && str2[4] == 'a' && str2[5] == 'n' && str2[6] == 'd' && str2[7] == ' ' )
             {
-
-                str3 = shorter(str2,5);
-
-                link = str3;
-                cout << "\nlink -> " << str3 << "\n\n";
-
+                str3 = shorter(str2,8);
+                args1 = str3;
+                cout << "\ncommand -> " << str3 << "\n\n";
             }
-
             else{
                 rlutil::setColor(12);
                 cout << "This option is not available.\n";
             }
-
-
         }
 
-        else if(modulen == "taktak")
+        else if(modulen == "windows/messagebox")
         {
 
-            if( str2[0] == 'h' && str2[1] == 'o' && str2[2] == 's' && str2[3] == 't' && str2[4] == ' ' ){
-                str3 = shorter(str2,6);
-
-                host = str3;
+            if( str2[0] == 'm' && str2[1] == 'e' && str2[2] == 's' && str2[3] == 's' && str2[4] == 'a' && str2[5] == 'g' && str2[6] == 'e' && str2[7] == ' ' ){
+                str3 = shorter(str2,8);
+                args1 = str3;
                 cout << "\nhost -> " << str3 << "\n\n";
 
-            }
-            else if(str2[0] == 'p' && str2[1] == 'o' && str2[2] == 'r' && str2[3] == 't' && str2[4] == ' '){
-                str3 = shorter(str2,6);
-
-                port = str3;
-                cout << "\nport -> " << str3 << "\n\n";
             }
             else{
                 rlutil::setColor(12);
@@ -135,27 +128,99 @@ do{
 
         str2 = shorter(usecmd2,6);
 
-        if( str2[0] == 'h' && str2[1] == 'o' && str2[2] == 's' && str2[3] == 't'){
-            host = "None";
+        if(modulen == "windows/exec")
+        {
+            if( str2[0] == 'c' && str2[1] == 'o' && str2[2] == 'm' && str2[3] == 'm' && str2[4] == 'a' && str2[5] == 'n' && str2[6] == 'd' ){
+                args1 = "None";
+            }
+            else{
+                rlutil::setColor(12);
+                cout << "This option is not available.\n";
+            }
         }
-        else if( str2[0] == 'p' && str2[1] == 'o' && str2[2] == 'r' && str2[3] == 't' ){
-            port = "None";
+        else if(modulen == "windows/messagebox")
+        {
+            if( str2[0] == 'm' && str2[1] == 'e' && str2[2] == 's' && str2[3] == 's' && str2[4] == 'a' && str2[5] == 'g' && str2[6] == 'e' ){
+                args1 = "None";
+            }
+            else{
+                rlutil::setColor(12);
+                cout << "This option is not available.\n";
+            }
         }
-        else if( str2[0] == 'm' && str2[1] == 'e' && str2[2] == 's' && str2[3] == 's' && str2[4] == 'a' && str2[5] == 'g' && str2[5] == 'e' ){
-            link = "None";
-        }
-        else{
-            rlutil::setColor(12);
-            cout << "This option is not available.\n";
-        }
+
+        // ...
     }
 
     else if(strcmp(usecmd, "generate") == 0){
-        if(host == "None" || port == "None"){
-            cout << "\nSet options before generate shellcode.\n\n";
+
+        if(modulen == "windows/exec")
+        {
+            if(args1 == "None"){
+                cout << "\nSet option before generate shellcode.\n\n";
+            }
+            else{
+
+                char rn[100], xx[5] = ".py";
+                srand ( time(NULL) );
+                int x = rand() % 99999 + 11111;
+                itoa (x,rn,10);
+                strcat(rn,xx);
+
+                string session="from generator import *\n";
+                session += "input = \"";
+                session += args1;
+                session += "\"\n";
+                session += "os = \"windows\"\n";
+                session += "shelltype = \"exec\"\n\n";
+                session += "input = generator( os, shelltype, input)\n";
+                session += "shellcode =  '\nchar shellcode [] = \"%s\";' % input\n";
+                session += "print shellcode";
+
+
+                char filename []  =  "database\\";  strcpy(filename,rn);
+                std::ofstream outfile (filename);
+                outfile << session;
+                outfile.close();
+
+                char py [] = "python ";  strcpy(py,filename);
+                system(py);
+
+
+            }
+
         }
-        else{
-            // generate. .. .
+        else if(modulen == "windows/messagebox")
+        {
+            if(args1 == "None"){
+                cout << "\nSet option before generate shellcode.\n\n";
+            }
+            else{
+
+                char rn[100], xx[5] = ".py";
+                srand ( time(NULL) );
+                int x = rand() % 99999 + 11111;
+                itoa (x,rn,10);
+                strcat(rn,xx);
+
+                string session="from core.shellcodes.database.generator import *\n";
+                session += "input = \"";
+                session += args1;
+                session += "\"\n";
+                session += "os = \"windows\"\n";
+                session += "shelltype = \"messagebox\"\n\n";
+                session += "input = generator( os, shelltype, input)\n";
+                session += "shellcode =  \"\"\"\nchar shellcode [] = \"%s\";\"\"\"\ % input\n";
+                session += "print shellcode";
+
+                std::ofstream outfile (rn);
+                outfile << session;
+                outfile.close();
+
+                char py [] = "python ";  strcpy(py,rn);
+                system(py);
+
+            }
         }
     }
     else{
