@@ -7,7 +7,7 @@ l0l a exploit development kit. Yet, are being developed. Then the beta version w
  
 ![alt tag](http://i.hizliresim.com/gXnMob.gif)
  
-xmpp : roissy@exploit.im
+jabber : roissy@exploit.im
  
 email : roissy@tuta.io
  
