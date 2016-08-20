@@ -167,14 +167,14 @@ do{
                 itoa (x,rn,10);
                 strcat(rn,xx);
 
-                string session="from generator import *\n";
+                string session="from core.shellcodes.database.generator import *\n";
                 session += "input = \"";
                 session += args1;
                 session += "\"\n";
                 session += "os = \"windows\"\n";
                 session += "shelltype = \"exec\"\n\n";
                 session += "input = generator( os, shelltype, input)\n";
-                session += "shellcode =  '\nchar shellcode [] = \"%s\";' % input\n";
+                session += "shellcode =  \"\"\"\nchar shellcode [] = \"%s\";\"\"\"\ % input\n";
                 session += "print shellcode";
 
 
@@ -186,6 +186,8 @@ do{
                 char py [] = "python ";  strcpy(py,filename);
                 system(py);
 
+                cout << "\n";
+                remove(rn);
 
             }
 
@@ -218,7 +220,12 @@ do{
                 outfile.close();
 
                 char py [] = "python ";  strcpy(py,rn);
+
                 system(py);
+
+                cout << "\n";
+
+                remove(rn);
 
             }
         }
