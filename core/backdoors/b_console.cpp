@@ -59,10 +59,10 @@ do{
         rlutil::setColor(10);
         cout <<
                 "\n\tModule options (" << modulen << "):\n\n"
-                "\t\tName\t\tCurrent Setting" << serefsiz << "Required \tDescription\n"
-                "\t\t----\t\t---------------" << serefsiz <<"-------- \t-----------\n"
-                "\t\tLHOST\t\t" << lhost << "\t\t" << "\tyes" <<"\t\tConnection Host\n"
-                "\t\tLPORT\t\t" << lport << serefsiz << "\tyes" <<"\t\tConnection Port\n\n";
+                "\t\tName\t" << "\tDescription" << "\t\tCurrent Setting\n"
+                "\t\t----\t" << "\t-----------" << "\t\t---------------\n"
+                "\t\tLHOST\t" << "\tConnection Host\t\t" << lhost << "\n"
+                "\t\tLPORT\t" << "\tConnection Port\t\t" << lport << "\n\n";
 
     }
     else if(strcmp(usecmd2, "set") == 0){

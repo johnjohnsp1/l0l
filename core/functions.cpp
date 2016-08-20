@@ -85,10 +85,15 @@ void shellcodeHelp(){
             "==================\n"
             "\t    Commands\t\tDescription\n"
             "\t    ----------\t \t--------------\n"
-            "\t    help    \t\tHelp Menu\n"
-            "\t    os      \t\tCommand directly ur computer\n"
-            "\t    back    \t\tA back goes into operation.\n"
-            "\t    exit    \t\tClose Application\n\n";
+            "\t    exit     \t\tClose Application\n"
+            "\t    set      \t\tSet Value Of Options To Modules\n"
+            "\t    unset    \t\tUnset Value Of Options To Modules\n"
+            "\t    help     \t\tHelp menu\n"
+            "\t    back     \t\tA back goes into operation.\n"
+            "\t    os       \t\tCommand directly ur computer\n"
+            "\t    clear    \t\tClear the menu\n"
+            "\t    generate \t\tGenerate shellcode\n"
+            "\t    show options\tShow current options of selected module\n\n";
 
 }
 

@@ -22,7 +22,6 @@ else{
         type = "encoder";
     }
 
-
     // Shellcode Modules
     #include "shellcodes/s_modules.cpp"
 
