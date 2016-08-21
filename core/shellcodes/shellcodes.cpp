@@ -40,12 +40,12 @@ void genshellcode(int argp, string os, string type, string args1, string args2)
 
     }
 
-    char filename[] = "__session__.py";
-    std::ofstream outfile (filename);
+    std::ofstream outfile ("__session__.py");
     outfile << session;
     outfile.close();
 
-    char py [] = "python ";  strcpy(py,filename);
+    char py [] = "python ";  strcpy(py,"__session__.py");
+
     system(py);
 
     cout << "\n";

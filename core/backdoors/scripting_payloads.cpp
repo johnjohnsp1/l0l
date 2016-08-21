@@ -35,7 +35,11 @@ void unix_python_reverse_tcp(string lhost, string lport){
     path = getcwd(NULL, 0); // or _getcwd
     if ( path != NULL )
         rlutil::setColor(10);
-        cout << "\n\tExploit Location : " << path << "\\" << filename << "\n\n";
+        #ifdef OS_Windows
+            cout << "\n\tExploit Location : " << path << "\\" << filename << "\n\n";
+        #else
+            cout << "\n\tExploit Location : " << path << "/" << filename << "\n\n";
+        #endif
 
 }
 
@@ -66,7 +70,11 @@ void unix_perl_reverse_tcp(string lhost, string lport){
     path = getcwd(NULL, 0); // or _getcwd
     if ( path != NULL )
         rlutil::setColor(10);
-        cout << "\n\tExploit Location : " << path << "\\" << filename << "\n\n";
+        #ifdef OS_Windows
+            cout << "\n\tExploit Location : " << path << "\\" << filename << "\n\n";
+        #else
+            cout << "\n\tExploit Location : " << path << "/" << filename << "\n\n";
+        #endif
 
 }
 
@@ -97,7 +105,12 @@ void unix_bash_reverse_tcp(string lhost, string lport){
     path = getcwd(NULL, 0); // or _getcwd
     if ( path != NULL )
         rlutil::setColor(10);
-        cout << "\n\tExploit Location : " << path << "\\" << filename << "\n\n";
+        #ifdef OS_Windows
+            cout << "\n\tExploit Location : " << path << "\\" << filename << "\n\n";
+        #else
+            cout << "\n\tExploit Location : " << path << "/" << filename << "\n\n";
+        #endif
+
 
 }
 
@@ -154,7 +167,11 @@ void unix_ruby_reverse_tcp(string lhost, string lport){
     path = getcwd(NULL, 0); // or _getcwd
     if ( path != NULL )
         rlutil::setColor(10);
-        cout << "\n\tExploit Location : " << path << "\\" << filename << "\n\n";
+        #ifdef OS_Windows
+            cout << "\n\tExploit Location : " << path << "\\" << filename << "\n\n";
+        #else
+            cout << "\n\tExploit Location : " << path << "/" << filename << "\n\n";
+        #endif
 
 }
 
@@ -234,7 +251,11 @@ void windows_asm_reverse_tcp(string lhost, string lport){
     path = getcwd(NULL, 0); // or _getcwd
     if ( path != NULL )
         rlutil::setColor(10);
-        cout << "\n\tExploit Location : " << path << "\\" << filename << "\n\n";
+        #ifdef OS_Windows
+            cout << "\n\tExploit Location : " << path << "\\" << filename << "\n\n";
+        #else
+            cout << "\n\tExploit Location : " << path << "/" << filename << "\n\n";
+        #endif
 
 }
 
@@ -267,7 +288,11 @@ void windows_ps_reverse_tcp(string lhost, string lport){
     path = getcwd(NULL, 0); // or _getcwd
     if ( path != NULL )
         rlutil::setColor(10);
-        cout << "\n\tExploit Location : " << path << "\\" << filename << "\n\n";
+        #ifdef OS_Windows
+            cout << "\n\tExploit Location : " << path << "\\" << filename << "\n\n";
+        #else
+            cout << "\n\tExploit Location : " << path << "/" << filename << "\n\n";
+        #endif
 
 }
 
