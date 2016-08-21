@@ -95,8 +95,7 @@ do{
         else if(modulen == "windows/download&execute")
         {
             cout <<
-                    "\t\tlink\t" <<  "\tSource to download exe\t" << args1 << "\n"
-                    "\t\tfilename\t" << "File name\t\t" << args2 << "\n\n";
+                    "\t\tlink\t" <<  "\tSource to download exe\t" << args1 << "\n\n";
         }
 
     }
@@ -144,12 +143,6 @@ do{
                 cout << "\nlink -> " << str3 << "\n\n";
 
             }
-            else if( str2[0] == 'f' && str2[1] == 'i' && str2[2] == 'l' && str2[3] == 'e' && str2[4] == 'n' && str2[5] == 'a' && str2[6] == 'm' && str2[7] == 'e' && str2[8] == ' '){
-                str3 = shorter(str2,9);
-                args2 = str3;
-                cout << "\nfilename -> " << str3 << "\n\n";
-
-            }
             else{
                 rlutil::setColor(12);
                 cout << "This option is not available.\n";
@@ -192,9 +185,6 @@ do{
             if( str2[0] == 'l' && str2[1] == 'i' && str2[2] == 'n' && str2[3] == 'k' ){
                 args1 = "None";
             }
-            else if( str2[0] == 'f' && str2[1] == 'i' && str2[2] == 'l' && str2[3] == 'e' && str2[4] == 'n' && str2[5] == 'a' && str2[6] == 'm' && str2[7] == 'e'){
-                args2 = "None";
-            }
             else{
                 rlutil::setColor(12);
                 cout << "This option is not available.\n";
@@ -233,7 +223,7 @@ do{
         else if(modulen == "windows/download&execute")
         {
             if(args1 == "None"){
-                cout << "\nSet link before generate shellcode.\n\n";
+                cout << "\nSet option before generate shellcode.\n\n";
             }
             else{
 

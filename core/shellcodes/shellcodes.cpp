@@ -36,7 +36,7 @@ void genshellcode(int argp, string os, string type, string a1, string a2)
 
     }
 
-    session += "print \"\"\"\nchar shellcode [] = \"%s\";\"\"\"\ % input\n";
+    session += "print \"\"\"\nchar shellcode [] = \"%s\";\"\"\"\ % shellcode\n";
 
     char filename[] = "session.py";
     std::ofstream outfile (filename);
