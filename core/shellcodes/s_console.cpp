@@ -124,7 +124,7 @@ do{
             if( str2[0] == 'm' && str2[1] == 'e' && str2[2] == 's' && str2[3] == 's' && str2[4] == 'a' && str2[5] == 'g' && str2[6] == 'e' && str2[7] == ' ' ){
                 str3 = shorter(str2,8);
                 args1 = str3;
-                cout << "\nhost -> " << str3 << "\n\n";
+                cout << "\nmessage-> " << str3 << "\n\n";
 
             }
             else{
