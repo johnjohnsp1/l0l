@@ -46,10 +46,13 @@ void genshellcode(int argp, string os, string type, string args1, string args2)
     outfile.close();
 
     char py [] = "python ";  strcpy(py,filename);
-    system(py);
+    char *path = NULL;
+    path = getcwd(NULL, 0); strcpy(path,py);
+    system(path);
+
 
     cout << "\n";
-    remove(filename);
+    remove(path);
 
 
 }
