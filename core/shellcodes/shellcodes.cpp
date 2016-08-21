@@ -45,14 +45,10 @@ void genshellcode(int argp, string os, string type, string args1, string args2)
     outfile << session;
     outfile.close();
 
-    char py [] = "python ";  strcpy(py,filename);
-    char *path = NULL;
-    path = getcwd(NULL, 0); strcpy(path,py);
-    system(path);
-
+    system("python session.py");
 
     cout << "\n";
-    remove(path);
+    remove("session.py");
 
 
 }
