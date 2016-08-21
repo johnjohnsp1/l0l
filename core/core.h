@@ -2,7 +2,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
+#include <conio.h>  // xx-Dos
+#include <curses.h> // unix
 #include <string.h>
 #include <time.h>
 #include <signal.h>
