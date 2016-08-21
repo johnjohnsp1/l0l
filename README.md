@@ -2,6 +2,12 @@
 
 l0l a exploit development kit. Yet, are being developed. Then the beta version will be published. Thanks (:
 
+# Status
+
+- Shellcode:3
+- Injector:0
+- Encoder:0
+- Backdoors:6
 
 # Work for me!
  
