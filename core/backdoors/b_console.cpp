@@ -61,7 +61,7 @@ do{
     }
     else if(strcmp(usecmd, "show options") == 0){
 
-        rlutil::setColor(10);
+        rlutil::setColor(2);
         cout <<
                 "\n\tModule options (" << modulen << "):\n\n"
                 "\t\tName\t" << "\tDescription" << "\t\tCurrent Setting\n"

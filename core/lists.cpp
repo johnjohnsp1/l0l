@@ -72,7 +72,8 @@ void shellcodeList(){
             "\n\tWindows\n"
             "\t===========\n\n"
             "\t windows/exec\n"
-            "\t windows/messagebox\n\n";
+            "\t windows/messagebox\n"
+            "\t windows/download&execute\n\n";
 
 
 

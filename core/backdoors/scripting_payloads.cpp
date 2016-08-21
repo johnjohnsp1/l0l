@@ -34,7 +34,7 @@ void unix_python_reverse_tcp(string lhost, string lport){
     char *path = NULL;
     path = getcwd(NULL, 0); // or _getcwd
     if ( path != NULL )
-        rlutil::setColor(10);
+        rlutil::setColor(2);
         #ifdef OS_Windows
             cout << "\n\tExploit Location : " << path << "\\" << filename << "\n\n";
         #else
@@ -69,7 +69,7 @@ void unix_perl_reverse_tcp(string lhost, string lport){
     char *path = NULL;
     path = getcwd(NULL, 0); // or _getcwd
     if ( path != NULL )
-        rlutil::setColor(10);
+        rlutil::setColor(2);
         #ifdef OS_Windows
             cout << "\n\tExploit Location : " << path << "\\" << filename << "\n\n";
         #else
@@ -104,7 +104,7 @@ void unix_bash_reverse_tcp(string lhost, string lport){
     char *path = NULL;
     path = getcwd(NULL, 0); // or _getcwd
     if ( path != NULL )
-        rlutil::setColor(10);
+        rlutil::setColor(2);
         #ifdef OS_Windows
             cout << "\n\tExploit Location : " << path << "\\" << filename << "\n\n";
         #else
@@ -166,7 +166,7 @@ void unix_ruby_reverse_tcp(string lhost, string lport){
     char *path = NULL;
     path = getcwd(NULL, 0); // or _getcwd
     if ( path != NULL )
-        rlutil::setColor(10);
+        rlutil::setColor(2);
         #ifdef OS_Windows
             cout << "\n\tExploit Location : " << path << "\\" << filename << "\n\n";
         #else
@@ -250,7 +250,7 @@ void windows_asm_reverse_tcp(string lhost, string lport){
     char *path = NULL;
     path = getcwd(NULL, 0); // or _getcwd
     if ( path != NULL )
-        rlutil::setColor(10);
+        rlutil::setColor(2);
         #ifdef OS_Windows
             cout << "\n\tExploit Location : " << path << "\\" << filename << "\n\n";
         #else
@@ -287,7 +287,7 @@ void windows_ps_reverse_tcp(string lhost, string lport){
     char *path = NULL;
     path = getcwd(NULL, 0); // or _getcwd
     if ( path != NULL )
-        rlutil::setColor(10);
+        rlutil::setColor(2);
         #ifdef OS_Windows
             cout << "\n\tExploit Location : " << path << "\\" << filename << "\n\n";
         #else

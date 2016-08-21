@@ -28,7 +28,6 @@ using namespace std;
 
 #include "lib/rlutil.h"
 
-
 /* Core */
 
 #include "banner/banner.cpp"

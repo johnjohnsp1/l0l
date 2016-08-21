@@ -1,4 +1,4 @@
-    int shellcodeP = 2;
+    int shellcodeP = 3;
     int encodersP = 0;
     int injectorP = 0;
     int backdoorsP = 6;
@@ -35,45 +35,45 @@ void banner(){
     // rlutil::setColor(12);
 
     // Set Green Color
-    // rlutil::setColor(10);
+    // rlutil::setColor(2);
 
-    rlutil::setColor(10);
+    rlutil::setColor(2);
     printf("        =[ l0l v1         -");
     rlutil::setColor(12);
     printf("  BETA                               ");
-    rlutil::setColor(10);
+    rlutil::setColor(2);
     printf("]\n");
 
     printf(" + -- --=[ %d shellcode    -", shellcodeP);
     rlutil::setColor(12);
     printf("  %d Different OS                     ", differentOsP);
-    rlutil::setColor(10);
+    rlutil::setColor(2);
     printf("]\n");
 
 
     printf(" + -- --=[ %d encoders     -", encodersP);
     rlutil::setColor(12);
     printf("  (Shellcodes/executable files)      ");
-    rlutil::setColor(10);
+    rlutil::setColor(2);
     printf("]\n");
 
 
     printf(" + -- --=[ %d injector     -", injectorP);
     rlutil::setColor(12);
     printf("  (PE,ELF,DLL,RAR,DEB etc...)        ");
-    rlutil::setColor(10);
+    rlutil::setColor(2);
     printf("]\n");
 
     printf(" + -- --=[ %d backdoors    -", backdoorsP);
     rlutil::setColor(12);
     printf("  (ReverseShell)                     ");
-    rlutil::setColor(10);
+    rlutil::setColor(2);
     printf("]\n");
 
     printf(" + -- --=[ Open Source    :");
     rlutil::setColor(12);
     printf("  https://github.com/roissy/l0l      ");
-    rlutil::setColor(10);
+    rlutil::setColor(2);
     printf("]\n");
 
     printf("\n");

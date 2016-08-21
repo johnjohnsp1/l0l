@@ -10,7 +10,7 @@ else if(strcmp(str, "windows/messagebox") == 0){
     type = "shellcode";
 }
 
-/*else if(strcmp(str, "windows/download&execute") == 0){
+else if(strcmp(str, "windows/download&execute") == 0){
     usetxt=str;
     type = "shellcode";
-}*/
+}
