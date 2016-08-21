@@ -28,8 +28,14 @@ using namespace std;
 #include "functions.cpp"
 #include "lists.cpp"
 
+/* Shellcodes */
+
+#include "shellcodes/shellcodes.cpp"
+
 /* Backdoors */
 
 #include "backdoors/scripting_payloads.cpp"
+
+
 
 
