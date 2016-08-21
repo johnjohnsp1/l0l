@@ -1,18 +1,14 @@
-/* C Headers */
+/* Os detect */
 
 #ifdef __unix__
 #elif defined(_WIN32) || defined(WIN32)
 #define OS_Windows
 #endif
 
+/* C Headers */
+
 #include <stdio.h>
 #include <stdlib.h>
-
-#ifdef OS_Windows
-    #include <conio.h>
-#else
-    #include <curses.h>
-#endif
 
 #include <string.h>
 #include <time.h>
