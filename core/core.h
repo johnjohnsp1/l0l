@@ -1,3 +1,4 @@
+
 /* Os detect */
 
 #ifdef __unix__
@@ -9,11 +10,10 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
 #include <string.h>
 #include <time.h>
 #include <signal.h>
-#include <direct.h>
+#include <unistd.h>
 
 /* C++ Headers */
 
