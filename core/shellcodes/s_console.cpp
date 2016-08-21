@@ -7,7 +7,8 @@
 */
 
 do{
-    char usecmd[100] = "", usecmd2[100] = "", *str2, *str3;
+    string scmd;
+    char *str2, *str3;
 
     rlutil::setColor(9);
     cout << "l0l";
@@ -22,7 +23,12 @@ do{
     // Set White Color
     rlutil::setColor(15);
 
-    gets(usecmd);
+    getline( cin, scmd );
+    //char *usecmd = &scmd[0u];
+    //char *usecmd2 = &scmd[0u];
+    char* usecmd = strdup(scmd.c_str());
+    char* usecmd2 = strdup(scmd.c_str());
+
 
     strcpy(usecmd2,usecmd);
 

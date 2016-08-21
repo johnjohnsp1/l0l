@@ -1,5 +1,7 @@
 do{
-    char usecmd[100] = "", *str2;
+
+    string icmd;
+    char *str2;
 
     rlutil::setColor(9);
     cout << "l0l";
@@ -14,7 +16,12 @@ do{
     // Set White Color
     rlutil::setColor(15);
 
-    gets(usecmd);
+    getline( cin, icmd );
+    //char *usecmd = &icmd[0u];
+    //char *usecmd2 = &icmd[0u];
+    char* usecmd = strdup(icmd.c_str());
+    //char* usecmd2 = strdup(icmd.c_str());
+
 
     strtok(usecmd, " ");
 

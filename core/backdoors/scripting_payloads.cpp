@@ -3,7 +3,10 @@ void unix_python_reverse_tcp(string lhost, string lport){
     char rn[100], xx[5] = ".py";
     srand ( time(NULL) );
     int x = rand() % 99999 + 11111;
-    itoa (x,rn,10);
+
+    snprintf(rn, sizeof(rn), "%d", x);
+
+
     strcat(rn,xx);
 
     string output;
@@ -42,7 +45,9 @@ void unix_perl_reverse_tcp(string lhost, string lport){
     char rn[100], xx[5] = ".pl";
     srand ( time(NULL) );
     int x = rand() % 99999 + 11111;
-    itoa (x,rn,10);
+
+    snprintf(rn, sizeof(rn), "%d", x);
+
     strcat(rn,xx);
 
     string output;
@@ -71,7 +76,9 @@ void unix_bash_reverse_tcp(string lhost, string lport){
     char rn[100], xx[5] = ".sh";
     srand ( time(NULL) );
     int x = rand() % 99999 + 11111;
-    itoa (x,rn,10);
+
+    snprintf(rn, sizeof(rn), "%d", x);
+
     strcat(rn,xx);
 
     string output;
@@ -100,7 +107,9 @@ void unix_ruby_reverse_tcp(string lhost, string lport){
     char rn[100], xx[5] = ".rb";
     srand ( time(NULL) );
     int x = rand() % 99999 + 11111;
-    itoa (x,rn,10);
+
+    snprintf(rn, sizeof(rn), "%d", x);
+
     strcat(rn,xx);
 
     string output;
@@ -155,7 +164,9 @@ void windows_asm_reverse_tcp(string lhost, string lport){
     char rn[100], xx[5] = ".s";
     srand ( time(NULL) );
     int x = rand() % 99999 + 11111;
-    itoa (x,rn,10);
+
+    snprintf(rn, sizeof(rn), "%d", x);
+
     strcat(rn,xx);
 
     string output;
@@ -233,7 +244,10 @@ void windows_ps_reverse_tcp(string lhost, string lport){
     char rn[100], xx[5] = ".ps1";
     srand ( time(NULL) );
     int x = rand() % 99999 + 11111;
-    itoa (x,rn,10);
+
+    //itoa (x,rn,10);
+    snprintf(rn, sizeof(rn), "%d", x);
+
     strcat(rn,xx);
 
     string output;

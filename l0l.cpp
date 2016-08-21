@@ -17,7 +17,8 @@ int main(int argc, char * argv[]){
 
         mainConsole:
 
-        char command[100] = "", *str;
+        char *str;
+        string cmd;
 
         // Set Blue Color
         rlutil::setColor(9);
@@ -26,7 +27,9 @@ int main(int argc, char * argv[]){
         // Set White Color
         rlutil::setColor(15);
 
-        gets(command);
+        getline( cin, cmd );
+        //char *command = &cmd[0u];
+        char* command = strdup(cmd.c_str());
 
         strtok(command, " ");
 
@@ -63,7 +66,7 @@ int main(int argc, char * argv[]){
             closeApp();
         }
         else if(strcmp(command,"show") == 0){
-            str =  shorter(command,5);
+            str = shorter(command,5);
 
             if(command[5] == '\0'){
                 showCommand();
