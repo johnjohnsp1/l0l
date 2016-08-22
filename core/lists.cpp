@@ -73,7 +73,9 @@ void shellcodeList(){
             "\t===========\n\n"
             "\t windows/exec\n"
             "\t windows/messagebox\n"
-            "\t windows/download&execute\n\n";
+            "\t windows/download&execute\n"
+            "\t windows/reverse_tcp\n"
+            "\t windows/tcp_bind\n\n";
 
 
 

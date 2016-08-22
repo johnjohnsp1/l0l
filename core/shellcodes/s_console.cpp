@@ -8,7 +8,7 @@
 
 do{
     string scmd;
-    char *str2, *str3;
+    char *str2, *str3, *str4, *p;
 
     rlutil::setColor(9);
     cout << "l0l";
@@ -26,8 +26,11 @@ do{
     getline( cin, scmd );
     //char *usecmd = &scmd[0u];
     //char *usecmd2 = &scmd[0u];
+    //char *usecmd3 = &scmd[0u];
+
     char* usecmd = strdup(scmd.c_str());
     char* usecmd2 = strdup(scmd.c_str());
+    char* usecmd3 = strdup(scmd.c_str());
 
 
     strcpy(usecmd2,usecmd);
@@ -97,6 +100,17 @@ do{
             cout <<
                     "\t\tlink\t" <<  "\tSource to download exe\t" << args1 << "\n\n";
         }
+        else if(modulen == "windows/reverse_tcp")
+        {
+            cout <<
+                    "\t\thost\t" <<  "\tConnect HOST\t\t" << args1 << "\n"
+                    "\t\tport\t" <<  "\tConnect PORT\t\t" << args2 << "\n\n";
+        }
+        else if(modulen == "windows/tcp_bind")
+        {
+            cout <<
+                    "\t\tport\t" <<  "\tConnect PORT\t\t" << args1 << "\n\n";
+        }
 
     }
     else if(strcmp(usecmd2, "set") == 0){
@@ -150,6 +164,106 @@ do{
 
         }
 
+        else if(modulen == "windows/reverse_tcp"){
+
+            str2 = shorter(usecmd2,4);
+            p = shorter(usecmd3,4);
+            str3 = shorter(p,5);
+
+            if( str2[0] == 'h' && str2[1] == 'o' && str2[2] == 's' && str2[3] == 't' && str2[4] == ' ' ){
+
+                str4 = shorter(str2,5);
+
+                if(isValidIpAddress(str4)){
+                    args1 = str3;
+                    cout << "\nhost -> " << str3 << "\n\n";
+                }
+                else{
+                    printf("\nThe given IP is not a valid IP address..\n\n");
+                }
+
+            }
+            else if(str2[0] == 'p' && str2[1] == 'o' && str2[2] == 'r' && str2[3] == 't' && str2[4] == ' '){
+
+                str3 = shorter(str2,5);
+
+                if(strlen(str3) <= 5){
+
+                    int result, i=0, state;
+
+                    for(i; i < strlen(str3); i++)
+                    {
+                        if(check_digit(str3[i]))
+                        state = 1;
+                        else
+                        state = 0;
+                    }
+
+                    if(state == 0){
+                        cout << "\nYou can't use that character..\n\n";
+                    }
+                    else{
+                        args2 = str3;
+                        cout << "\nport -> " << str3 << "\n\n";
+                    }
+
+                }
+                else {
+                    cout << "\nYou can't enter more than 5 digit..\n\n" ;
+                }
+
+
+            }
+            else{
+                rlutil::setColor(12);
+                cout << "This option is not available.\n";
+            }
+
+        }
+
+        else if(modulen == "windows/tcp_bind"){
+
+            str2 = shorter(usecmd2,4);
+            p = shorter(usecmd3,4);
+            str3 = shorter(p,5);
+
+            if(str2[0] == 'p' && str2[1] == 'o' && str2[2] == 'r' && str2[3] == 't' && str2[4] == ' '){
+
+                str3 = shorter(str2,5);
+
+                if(strlen(str3) <= 5){
+
+                    int result, i=0, state;
+
+                    for(i; i < strlen(str3); i++)
+                    {
+                        if(check_digit(str3[i]))
+                        state = 1;
+                        else
+                        state = 0;
+                    }
+
+                    if(state == 0){
+                        cout << "\nYou can't use that character..\n\n";
+                    }
+                    else{
+                        args1 = str3;
+                        cout << "\nport -> " << str3 << "\n\n";
+                    }
+
+                }
+                else {
+                    cout << "\nYou can't enter more than 5 digit..\n\n" ;
+                }
+
+
+                }
+                else{
+                    rlutil::setColor(12);
+                    cout << "This option is not available.\n";
+                }
+        }
+
         // ..
 
     }
@@ -189,7 +303,33 @@ do{
                 rlutil::setColor(12);
                 cout << "This option is not available.\n";
             }
+        }
 
+        else if(modulen == "windows/reverse_tcp")
+        {
+
+            if( str2[0] == 'h' && str2[1] == 'o' && str2[2] == 's' && str2[3] == 't'){
+                args1 = "None";
+            }
+            else if(str2[0] == 'p' && str2[1] == 'o' && str2[2] == 'r' && str2[3] == 't'){
+                args2 = "None";
+            }
+            else{
+                rlutil::setColor(12);
+                cout << "This option is not available.\n";
+            }
+        }
+
+        else if(modulen == "windows/tcp_bind")
+        {
+
+            if(str2[0] == 'p' && str2[1] == 'o' && str2[2] == 'r' && str2[3] == 't'){
+                args1 = "None";
+            }
+            else{
+                rlutil::setColor(12);
+                cout << "This option is not available.\n";
+            }
         }
 
         // ..
@@ -231,6 +371,33 @@ do{
 
             }
         }
+
+        else if(modulen == "windows/reverse_tcp")
+        {
+
+            if(args1 == "None" || args2 == "None"){
+                cout << "\nSet options before generate shellcode.\n\n";
+            }
+            else{
+
+                genshellcode(2, "windows", "reverse_tcp", args1, args2);
+
+            }
+        }
+
+        else if(modulen == "windows/tcp_bind")
+        {
+
+            if(args1 == "None"){
+                cout << "\nSet option before generate shellcode.\n\n";
+            }
+            else{
+
+                genshellcode(1, "windows", "tcp_bind", args1, args2);
+
+            }
+        }
+        // ..
     }
     else{
         // Set Red Color

@@ -185,3 +185,66 @@ char* shorter(char *bilik, int p){
     bilik+=p;
     return bilik;
 }
+
+bool isValidIpAddress(char *st)
+{
+    int num, i, len;
+    char *ch;
+
+    int quadsCnt=0;
+
+    //printf("Split IP: \"%s\"\n", st);
+
+    len = strlen(st);
+
+    //  Check if the string is valid
+    if(len<7 || len>15)
+        return false;
+
+    ch = strtok(st, ".");
+
+    while (ch != NULL)
+    {
+        quadsCnt++;
+        //printf("Quald %d is %s\n", quadsCnt, ch);
+
+        num = 0;
+        i = 0;
+
+        //  Get the current token and convert to an integer value
+        while(ch[i]!='\0')
+        {
+            num = num*10;
+            num = num+(ch[i]-'0');
+            i++;
+        }
+
+        if(num<0 || num>255)
+        {
+            //printf("Not a valid ip\n");
+            return false;
+        }
+
+        if( (quadsCnt == 1 && num == 0) || (quadsCnt == 4 && num == 0))
+        {
+            //printf("Not a valid ip, quad: %d AND/OR quad:%d is zero\n", quadsCnt, quadsCnt);
+            return false;
+        }
+
+        ch = strtok(NULL, ".");
+    }
+
+    //  Check the address string, should be n.n.n.n format
+    if(quadsCnt!=4)
+    {
+        return false;
+    }
+
+    //  Looks like a valid IP address
+    return true;
+}
+
+int check_digit(char c)
+{
+    return (c>='0' && c<='9');
+}
