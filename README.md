@@ -12,7 +12,7 @@ jabber : roissy@exploit.im
 
 # Status
 
-- Shellcode : 3
+- Shellcode : 5
 - Injector  : 0
 - Encoder   : 0
 - Backdoors : 6
