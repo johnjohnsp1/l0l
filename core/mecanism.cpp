@@ -7,7 +7,6 @@ if(command[4] == '\0'){
 }
 else{
 
-
     if(strcmp(str, "test") == 0);
 
     // Injector Modules
@@ -51,6 +50,11 @@ else{
         #include "shellcodes/s_console.cpp"
     }
     else if(type == "backdoor"){
+
+        string parsermodule = usetxt;
+        char* parsmodule = strdup(parsermodule.c_str());
+        parsermodule=shorter(parsmodule,10);
+
         string lhost = "None", lport = "None";
         #include "backdoors/b_console.cpp"
     }

@@ -5,12 +5,17 @@ do{
 
     rlutil::setColor(9);
     cout << "l0l";
+    rlutil::setColor(8);
+    cout << ":";
     // Set White Color
     rlutil::setColor(15);
-    cout << ":";
+    cout << "encoder(";
     // Set Red Color
     rlutil::setColor(12);
     cout << usetxt;
+    // Set White Color
+    rlutil::setColor(15);
+    cout << ")";
     rlutil::setColor(9);
     printf(" > ");
     // Set White Color

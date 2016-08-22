@@ -4,12 +4,17 @@ do{
 
     rlutil::setColor(9);
     cout << "l0l";
+    rlutil::setColor(8);
+    cout << ":";
     // Set White Color
     rlutil::setColor(15);
-    cout << ":";
+    cout << "backdoor(";
     // Set Red Color
     rlutil::setColor(12);
-    cout << usetxt;
+    cout << parsermodule;
+    // Set White Color
+    rlutil::setColor(15);
+    cout << ")";
     rlutil::setColor(9);
     printf(" > ");
     // Set White Color
@@ -95,8 +100,6 @@ do{
             }
 
         else if(str2[0] == 'L' && str2[1] == 'P' && str2[2] == 'O' && str2[3] == 'R' && str2[4] == 'T' && str2[5] == ' '){
-
-
 
             str3 = shorter(str2,6);
 
