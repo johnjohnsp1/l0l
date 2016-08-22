@@ -251,11 +251,10 @@ do{
                         cout << "\nport -> " << str3 << "\n\n";
                     }
 
-                }
-                else {
-                    cout << "\nYou can't enter more than 5 digit..\n\n" ;
-                }
-
+                    }
+                    else {
+                        cout << "\nYou can't enter more than 5 digit..\n\n" ;
+                    }
 
                 }
                 else{

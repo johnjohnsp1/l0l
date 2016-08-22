@@ -1,6 +1,6 @@
 do{
     string bcmd;
-    char *str2, *str3;
+    char *str2, *str3, *str4, *p;
 
     rlutil::setColor(9);
     cout << "l0l";
@@ -18,8 +18,10 @@ do{
     getline( cin, bcmd );
     //char *usecmd = &bcmd[0u];
     //char *usecmd2 = &bcmd[0u];
+    //char *usecmd3 = &bcmd[0u];
     char* usecmd = strdup(bcmd.c_str());
     char* usecmd2 = strdup(bcmd.c_str());
+    char* usecmd3 = strdup(bcmd.c_str());
 
     strcpy(usecmd2,usecmd);
 
@@ -72,20 +74,57 @@ do{
     }
     else if(strcmp(usecmd2, "set") == 0){
 
-        str2 = shorter(usecmd2,4);
 
-        if( str2[0] == 'L' && str2[1] == 'H' && str2[2] == 'O' && str2[3] == 'S' && str2[4] == 'T' && str2[5] == ' ' ){
-            str3 = shorter(str2,6);
 
-            lhost = str3;
-            cout << "\nLHOST -> " << str3 << "\n\n";
+            str2 = shorter(usecmd2,4);
+            p = shorter(usecmd3,4);
+            str3 = shorter(p,6);
 
-        }
+            if( str2[0] == 'L' && str2[1] == 'H' && str2[2] == 'O' && str2[3] == 'S' && str2[4] == 'T' && str2[5] == ' ' ){
+
+                str4 = shorter(str2,6);
+
+                if(isValidIpAddress(str4)){
+                    lhost = str3;
+                    cout << "\nLHOST -> " << str3 << "\n\n";
+                }
+                else{
+                    printf("\nThe given IP is not a valid IP address..\n\n");
+                }
+
+            }
+
         else if(str2[0] == 'L' && str2[1] == 'P' && str2[2] == 'O' && str2[3] == 'R' && str2[4] == 'T' && str2[5] == ' '){
+
+
+
             str3 = shorter(str2,6);
 
-            lport = str3;
-            cout << "\nLPORT -> " << str3 << "\n\n";
+            if(strlen(str3) <= 5){
+
+                int result, i=0, state;
+
+                for(i; i < strlen(str3); i++)
+                {
+                    if(check_digit(str3[i]))
+                    state = 1;
+                    else
+                    state = 0;
+                }
+
+                if(state == 0){
+                    cout << "\nYou can't use that character..\n\n";
+                }
+                else{
+                    lport = str3;
+                    cout << "\nport -> " << str3 << "\n\n";
+                }
+
+            }
+            else {
+                cout << "\nYou can't enter more than 5 digit..\n\n" ;
+            }
+
         }
         else{
             rlutil::setColor(12);
