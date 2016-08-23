@@ -8,7 +8,7 @@ l0l a exploit development kit. Yet, are being developed. Then the beta version w
  
 # Status
 
-- Shellcodes : 5
+- Shellcodes : 27
 - Injectors  : 0
 - Encoders   : 0
 - Backdoors : 6
