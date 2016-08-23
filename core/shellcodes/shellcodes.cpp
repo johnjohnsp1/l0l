@@ -35,6 +35,11 @@ void genshellcode(int argp, string os, string type, string a1, string a2)
         session += "shellcode = generator( os, shelltype, argv=input, argv2=input2)\n";
 
     }
+    else if( argp == 4 ){
+
+        session += "shellcode = generator( os, shelltype )\n";
+
+    }
 
     session += "print \"\"\"\nchar shellcode [] = \"%s\";\"\"\"\ % shellcode\n";
 

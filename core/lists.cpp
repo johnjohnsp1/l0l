@@ -23,41 +23,63 @@ void injectorList(){
 }
 
 void shellcodeList(){
-/*
+
     cout <<
             "\n\tLinux x86\n"
             "\t===========\n\n"
-            "\ttaktak (test)\n\n";
+            "\t\tlinux86/exec\n"
+            "\t\tlinux86/download&execute\n"
+            "\t\tlinux86/bin_sh\n"
+            "\t\tlinux86/read\n"
+            "\t\tlinux86/chmod\n"
+            "\t\tlinux86/tcp_bind\n"
+            "\t\tlinux86/reverse_tcp\n\n";
 
 
     cout <<
             "\n\tLinux x64\n"
-            "\t===========\n";
+            "\t===========\n\n"
+            "\t\tlinux64/bin_sh\n"
+            "\t\tlinux64/read\n"
+            "\t\tlinux64/tcp_bind\n"
+            "\t\tlinux64/reverse_tcp\n\n";
 
-    noModule();
+
 
 
     cout <<
             "\n\tLinux x86/x64 [Works on both]\n"
-            "\t===========\n";
+            "\t===========\n\n"
+            "\t\tlinux/bin_sh\n"
+            "\t\tlinux/read\n"
+            "\t\tlinux/tcp_bind\n"
+            "\t\tlinux/reverse_tcp\n\n";
 
-    noModule();
+
 
 
 
     cout <<
             "\n\tLinux ARM\n"
-            "\t===========\n";
+            "\t===========\n\n"
+            "\t\tlinux_arm/exec\n"
+            "\t\tlinux_arm/binsh\n"
+            "\t\tlinux_arm/chmod\n"
+            "\t\tlinux_arm/reverse_tcp\n\n";
 
-    noModule();
+
 
 
 
     cout <<
             "\n\tLinux MIPS\n"
-            "\t===========\n";
+            "\t===========\n\n"
+            "\t\tlinux_mips/binsh\n"
+            "\t\tlinux_mips/chmod\n"
+            "\t\tlinux_mips/tcp_bind\n\n";
 
-    noModule();
+
+/*
 
 
     cout <<
@@ -71,11 +93,11 @@ void shellcodeList(){
     cout <<
             "\n\tWindows\n"
             "\t===========\n\n"
-            "\t windows/exec\n"
-            "\t windows/messagebox\n"
-            "\t windows/download&execute\n"
-            "\t windows/reverse_tcp\n"
-            "\t windows/tcp_bind\n\n";
+            "\t\twindows/exec\n"
+            "\t\twindows/download&execute\n"
+            "\t\twindows/messagebox\n"
+            "\t\twindows/tcp_bind\n"
+            "\t\twindows/reverse_tcp\n\n";
 
 
 
