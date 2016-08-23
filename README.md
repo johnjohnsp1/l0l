@@ -95,6 +95,13 @@ l0l a exploit development kit. Yet, are being developed. Then the beta version w
 	            
     
 -----
+
+# Work for me!
+ 
+email : roissy@tuta.io 
+
+jabber : roissy@exploit.im
+
 #Screenshots
 
 ![alt tag](http://i.hizliresim.com/yVMBXk.png)
@@ -104,9 +111,3 @@ l0l a exploit development kit. Yet, are being developed. Then the beta version w
 ![alt tag](http://i.hizliresim.com/40gEXA.png)
 
 ![alt tag](http://i.hizliresim.com/gX5kg0.png)
-
-# Work for me!
- 
-email : roissy@tuta.io 
-
-jabber : roissy@exploit.im
