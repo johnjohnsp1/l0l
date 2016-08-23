@@ -2,14 +2,8 @@
 
 l0l a exploit development kit. Yet, are being developed. Then the beta version will be published. Thanks (:
 
-# Work for me!
- 
 ![alt tag](http://i.hizliresim.com/gXnMob.gif)
  
-email : roissy@tuta.io 
-
-jabber : roissy@exploit.im
-
 # Status
 
 - Shellcodes : 5
@@ -110,3 +104,9 @@ jabber : roissy@exploit.im
 ![alt tag](http://i.hizliresim.com/40gEXA.png)
 
 ![alt tag](http://i.hizliresim.com/gX5kg0.png)
+
+# Work for me!
+ 
+email : roissy@tuta.io 
+
+jabber : roissy@exploit.im
