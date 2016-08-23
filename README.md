@@ -2,7 +2,7 @@
 
 l0l a exploit development kit. Yet, are being developed. Then the beta version will be published. Thanks (:
 
-![alt tag](http://i.hizliresim.com/gXnMob.gif)
+![alt tag](http://i.hizliresim.com/QQl1oV.gif)
  
 # Status
 
@@ -24,6 +24,16 @@ l0l a exploit development kit. Yet, are being developed. Then the beta version w
 	- Have fun (:
     
 -----
+
+#Contact
+
+Work for me! and.. Please Report bugs (:
+
+email : roissy@tuta.io 
+
+jabber : roissy@exploit.im
+
+
 #Usage
 -----
 
@@ -95,12 +105,6 @@ l0l a exploit development kit. Yet, are being developed. Then the beta version w
 	            
     
 -----
-
-# Work for me!
- 
-email : roissy@tuta.io 
-
-jabber : roissy@exploit.im
 
 #Screenshots
 
