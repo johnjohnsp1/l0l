@@ -1,5 +1,7 @@
 # l0l
 
+[![Join the chat at https://badges.gitter.im/l0l-chat](https://badges.gitter.im/l0l-chat/l0l.svg)](https://gitter.im/l0l-chat/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+
 l0l a exploit development kit. Yet, are being developed. Then the beta version will be published. Thanks (:
 
 ![alt tag](http://i.hizliresim.com/QQl1oV.gif)
