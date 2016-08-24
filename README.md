@@ -22,7 +22,7 @@ l0l a exploit development kit. Yet, are being developed. Then the beta version w
     Exp:
     $ g++ -o l0l l0l.cpp
     Run:
-    $ ./l0l
+    $ ./l0l or l0l.exe
 	- Have fun (:
     
 -----
