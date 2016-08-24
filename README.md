@@ -39,9 +39,7 @@ jabber : roissy@exploit.im
 #Usage
 -----
 
-	Usage Commands
-	===============
-	            Commands            Description
+	    Main Commands:  	        Description
 	            ----------          --------------
 	            help                Help Menu
 	            os                  Command directly ur computer
@@ -56,9 +54,7 @@ jabber : roissy@exploit.im
 	            exit                Close Application
 	
 
-	Shellcode Commands
-	==================
-				Commands            Description
+		Shellcode Commands: 		Description		
 				----------          --------------
 				exit                Close Application
 				set                 Set Value Of Options To Modules
@@ -71,9 +67,7 @@ jabber : roissy@exploit.im
 				show options        Show current options of selected module
 	
 	            
-	Injector Commands
-	=================
-	            Commands            Description
+		Injector Commands:			Description
 	            ----------          --------------
 	            help                Help Menu
 	            os                  Command directly ur computer
@@ -81,9 +75,7 @@ jabber : roissy@exploit.im
 	            exit                Close Application
 	            
 	            
-	Encoder Commands
-	================
-	            Commands            Description
+	    Encoder Commands:           Description
 	            ----------          --------------
 	            help                Help Menu
 	            os                  Command directly ur computer
@@ -91,9 +83,7 @@ jabber : roissy@exploit.im
 	            exit                Close Application
 	            
 	            
-	Backdoor Commands
-	=================
-	            Commands            Description
+		Backdoor Commands:          Description
 	            ----------          --------------
 	            exit                Close Application
 	            set                 Set Value Of Options To Modules
