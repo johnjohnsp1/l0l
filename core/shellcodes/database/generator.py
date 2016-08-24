@@ -145,7 +145,7 @@ def generator( choose, shellcode, argv="None", argv2="None"):
 
 		elif shellcode == "read":
 			from FreeBSDx86.read import read
-			from plaintext import plaintext
+			from stackconvert import plaintext
 			return read(plaintext(argv))
 
 
@@ -165,14 +165,14 @@ def generator( choose, shellcode, argv="None", argv2="None"):
 		elif shellcode == "tcp_bind":
 			from FreeBSDx86.tcp_bind import tcp_bind
 			if len(str(argv)) == 5:
-				PORT = "\\x{0}\\x{1}".format((hex(int(argv))[2:][0:2],hex(int(argv))[2:][2:]))
+				PORT = "\\x{0}\\x{1}".format(*(hex(int(argv))[2:][0:2],hex(int(argv))[2:][2:]))
 			else:
-				PORT = "\\x{0}\\x{1}".format(("0"+hex(int(argv))[2:][0],hex(int(argv))[2:][1:]))
+				PORT = "\\x{0}\\x{1}".format(*("0"+hex(int(argv))[2:][0],hex(int(argv))[2:][1:]))
 			return tcp_bind( PORT)
 
 		elif shellcode == "exec":
 			from FreeBSDx86.execc import execc
-			from plaintext import plaintext
+			from stackconvert import plaintext
 			command = '/bin/sh -c {0}'.format(argv)
 			return execc(plaintext(argv))
 		
@@ -183,8 +183,10 @@ def generator( choose, shellcode, argv="None", argv2="None"):
 		
 		elif shellcode == "exec":
 			from FreeBSDx64.execc import execc
-			return execc()	
-
+			from stackconvert import plaintext
+			command = '/bin/sh -c {0}'.format(argv)
+			return execc(plaintext(argv))
+			
 
 		elif shellcode == "tcp_bind":
 			from stackconvert import plaintext

@@ -90,38 +90,43 @@ void shellcodeList(){
             "\t\twindows/reverse_tcp\n\n";
 
 
-
-/*
     cout <<
             "\n\tOSX x86\n"
-            "\t===========\n";
-
-    noModule();
-
+            "\t===========\n\n"
+            "\t\tosx86/binsh\n"
+            "\t\tosx86/tcp_bind\n"
+            "\t\tosx86/reverse_tcp\n\n";
 
 
     cout <<
             "\n\tOSX x64\n"
-            "\t===========\n";
+            "\t===========\n\n"
+            "\t\tosx64/binsh\n"
+            "\t\tosx64/tcp_bind\n"
+            "\t\tosx64/reverse_tcp\n\n";
 
-    noModule();
+
 
 
 
     cout <<
             "\n\tFreeBSD x86\n"
-            "\t===========\n";
-
-    noModule();
+            "\t===========\n\n"
+            "\t\tFreeBSDx86/binsh\n"
+            "\t\tFreeBSDx86/read\n"
+            "\t\tFreeBSDx86/tcp_bind\n"
+            "\t\tFreeBSDx86/reverse_tcp\n"
+            "\t\tFreeBSDx86/reverse_tcp2 (through /bin/sh)\n"
+            "\t\tFreeBSDx86/exec\n\n";
 
 
     cout <<
             "\n\tFreeBSD x64\n"
-            "\t===========\n";
-
-    noModule();
-
-*/
+            "\t===========\n\n"
+            "\t\tFreeBSDx64/binsh\n"
+            "\t\tFreeBSDx64/tcp_bind\n"
+            "\t\tFreeBSDx64/reverse_tcp\n"
+            "\t\tFreeBSDx64/exec\n\n";
 
 
 }

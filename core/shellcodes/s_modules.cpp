@@ -174,3 +174,91 @@ else if(strcmp(str, "windows/tcp_bind") == 0){
     usetxt=str;
     type = "shellcode";
 }
+
+// OSX x86
+
+else if(strcmp(str, "osx86/binsh") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
+
+else if(strcmp(str, "osx86/tcp_bind") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
+
+else if(strcmp(str, "osx86/reverse_tcp") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
+
+// OSX x64
+
+else if(strcmp(str, "osx64/binsh") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
+
+else if(strcmp(str, "osx64/tcp_bind") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
+
+else if(strcmp(str, "osx64/reverse_tcp") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
+
+// FreeBSD x86
+
+else if(strcmp(str, "FreeBSDx86/binsh") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
+
+else if(strcmp(str, "FreeBSDx86/read") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
+
+else if(strcmp(str, "FreeBSDx86/tcp_bind") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
+
+else if(strcmp(str, "FreeBSDx86/reverse_tcp") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
+
+else if(strcmp(str, "FreeBSDx86/reverse_tcp2") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
+
+else if(strcmp(str, "FreeBSDx86/exec") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
+
+// FreeBSD x64
+
+else if(strcmp(str, "FreeBSDx64/binsh") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
+
+else if(strcmp(str, "FreeBSDx64/tcp_bind") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
+
+else if(strcmp(str, "FreeBSDx64/reverse_tcp") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
+
+else if(strcmp(str, "FreeBSDx64/exec") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
