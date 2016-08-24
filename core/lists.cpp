@@ -45,8 +45,6 @@ void shellcodeList(){
             "\t\tlinux64/reverse_tcp\n\n";
 
 
-
-
     cout <<
             "\n\tLinux x86/x64 [Works on both]\n"
             "\t===========\n\n"
@@ -54,9 +52,6 @@ void shellcodeList(){
             "\t\tlinux/read\n"
             "\t\tlinux/tcp_bind\n"
             "\t\tlinux/reverse_tcp\n\n";
-
-
-
 
 
     cout <<
@@ -68,9 +63,6 @@ void shellcodeList(){
             "\t\tlinux_arm/reverse_tcp\n\n";
 
 
-
-
-
     cout <<
             "\n\tLinux MIPS\n"
             "\t===========\n\n"
@@ -79,16 +71,14 @@ void shellcodeList(){
             "\t\tlinux_mips/tcp_bind\n\n";
 
 
-/*
-
-
     cout <<
             "\n\tSolaris x86\n"
-            "\t===========\n";
+            "\t===========\n\n"
+            "\t\tsolarisx86/binsh\n"
+            "\t\tsolarisx86/read\n"
+            "\t\tsolarisx86/reverse_tcp\n"
+            "\t\tsolarisx86/tcp_bind\n\n";
 
-    noModule();
-
-*/
 
     cout <<
             "\n\tWindows\n"

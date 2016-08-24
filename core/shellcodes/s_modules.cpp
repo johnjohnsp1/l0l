@@ -126,6 +126,27 @@ else if(strcmp(str, "linux_mips/tcp_bind") == 0){
     type = "shellcode";
 }
 
+// Solaris x86
+
+else if(strcmp(str, "solarisx86/binsh") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
+
+else if(strcmp(str, "solarisx86/read") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
+
+else if(strcmp(str, "solarisx86/reverse_tcp") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
+
+else if(strcmp(str, "solarisx86/tcp_bind") == 0){
+    usetxt=str;
+    type = "shellcode";
+}
 
 //Windows
 
