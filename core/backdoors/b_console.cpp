@@ -120,7 +120,7 @@ do{
                 }
                 else{
                     lport = str3;
-                    cout << "\nport -> " << str3 << "\n\n";
+                    cout << "\nLPORT -> " << str3 << "\n\n";
                 }
 
             }
