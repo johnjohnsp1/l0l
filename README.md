@@ -29,7 +29,9 @@ l0l a exploit development kit. Yet, are being developed. Then the beta version w
 
 #Contact
 
-Work for me! and.. Please Report bugs (:
+Work for me!
+
+.. Please Report bugs (:
 
 email : roissy@tuta.io 
 
