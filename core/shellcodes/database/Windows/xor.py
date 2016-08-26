@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 # This xor encoder was developed completely by Justin Warner (@sixdub)
 # Thanks a lot for letting us add this in!

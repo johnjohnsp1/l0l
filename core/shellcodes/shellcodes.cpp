@@ -48,7 +48,7 @@ void genshellcode(int argp, string os, string type, string a1, string a2)
     outfile << session;
     outfile.close();
 
-    system("python session.py");
+    system("python2 session.py");
 
     cout << "\n";
     remove("session.py");
